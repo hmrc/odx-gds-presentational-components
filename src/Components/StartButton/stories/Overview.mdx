@@ -1,0 +1,28 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as StartButtonStories from './StartButton.stories';
+import { StartButton } from '../StartButton'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={StartButtonStories} />
+
+# Start Button
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/button/)
+- The Start Button is a separate component to the [Button Component](gds-components-button), as the Start Button is rendered as a link styled as a button.
+
+## Props
+<ArgsTable of={StartButton} />
+
+## Details
+The Start Button should be used as the main call to action on your service’s Start page.
+Start buttons do not usually submit form data, so this component is implemented as link tag instead of a button tag.
+
+The component expects to receive:
+- ```href``` prop
+
+<Canvas of={StartButtonStories.Default}/>
+
+### Text content
+The component will default to render the text 'Start now', however you can provide cutstom text with the
+```text``` prop.
+
+<Canvas of={StartButtonStories.CustomText}/>

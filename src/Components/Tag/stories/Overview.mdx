@@ -1,0 +1,61 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import * as TagStories from './Tag.stories';
+import * as TagColourStories from './Tag.colour.stories.tsx'
+import { Tag } from '../Tag';
+import { TagProps, TagColour } from '../Tag.types';
+
+<Meta of={TagStories} />
+
+# Tag
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/tag/)
+
+## Props
+
+<ArgsTable of={Tag} />
+
+## Details
+
+### Usage
+
+A default tag implementation requires the providing of:
+- ```text``` property - Defining the text shown in on the tag
+- ```colour``` property - Defining the colour for the tag
+
+The default style of the tag is:
+<Canvas of={TagStories.Default}/>
+
+### Colours
+For different colours of the tag, use the
+```colours``` property, which expects a value from the TagColour enumerator
+The available colours are:
+
+<u><b>TagColour.Grey</b></u>
+<Canvas of={TagColourStories.Grey}/>
+
+<u><b>TagColour.Green</b></u>
+<Canvas of={TagColourStories.Green}/>
+
+<u><b>TagColour.Turquoise</b></u>
+<Canvas of={TagColourStories.Turquoise}/>
+
+<u><b>TagColour.Blue</b></u>
+<Canvas of={TagColourStories.Blue}/>
+
+<u><b>TagColour.LightBlue</b></u>
+<Canvas of={TagColourStories.LightBlue}/>
+
+<u><b>TagColour.Purple</b></u>
+<Canvas of={TagColourStories.Purple}/>
+
+<u><b>TagColour.Pink</b></u>
+<Canvas of={TagColourStories.Pink}/>
+
+<u><b>TagColour.Red</b></u>
+<Canvas of={TagColourStories.Red}/>
+
+<u><b>TagColour.Orange</b></u>
+<Canvas of={TagColourStories.Orange}/>
+
+<u><b>TagColour.Yellow</b></u>
+<Canvas of={TagColourStories.Yellow}/>

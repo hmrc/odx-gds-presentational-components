@@ -1,0 +1,24 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import  * as NotificationBannerStories from './NotificationBanner.stories';
+import { NotificationBanner } from '../NotificationBanner';
+
+<Meta of={NotificationBannerStories} />
+
+# Notification Banner
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/notification-banner/)
+
+## Props 
+
+<ArgsTable of={NotificationBanner} />
+
+## Details
+
+The Notification banner will accept type property, the banner theme will be based on the type property 
+(e.g. passing success will render the banner in green colour)
+<Canvas of={NotificationBannerStories.Success} />
+
+
+The Notification banner will accept type property, the banner theme will be based on the type property 
+(e.g. passing neutral will render the banner in blue colour)
+<Canvas of={NotificationBannerStories.Neutral} />

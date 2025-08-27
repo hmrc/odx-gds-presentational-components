@@ -1,0 +1,34 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import  * as PhaseBannerStories from './PhaseBanner.stories';
+import { PhaseBanner } from '../PhaseBanner';
+
+<Meta of={PhaseBannerStories} />
+
+# Phase Banner
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/phase-banner/)
+
+## Props
+
+<ArgsTable of={PhaseBanner} />
+
+## Details
+
+The Phase Banner component is used to indicate the current phase of a service. It can be used to show whether a service is in alpha or beta phase by changing the `type` prop. It expects either 'alpha' or 'beta'. 
+
+The 'children' prop is a react node that will be displayed inside the banner. This enables it to be either just text or also contain a link element (which could also be a seperate component). 
+<Canvas of={PhaseBannerStories.Alpha} />
+
+The Phase Banner component can also indicate if a service is in beta phase if the `type` prop is set to `beta`.
+<Canvas of={PhaseBannerStories.Beta} />
+
+The GDS documentation states;
+
+Show the Phase banner directly under either:
+
+ - the Service navigation component
+ - the GOV.UK header component and its blue colour bar (if your service does not use the Service navigation component)
+
+However it also states that "You can choose to place the Phase banner in a more appropriate place for your service, however you’ll need to customise the component and provide your own CSS code to make it show correctly.". The below shows how you might wrap the Phase Banner component in a div with a class name to effect the layout/positioning.
+
+<Canvas of={PhaseBannerStories.Wrapped} />

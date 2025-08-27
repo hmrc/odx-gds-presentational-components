@@ -1,0 +1,125 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+
+import  * as GOVUKFooterStories from './GOVUKFooter.stories';
+import GOVUKFooter from '../GOVUKFooter';
+import { FooterProps } from '../GOVUKFooter.types'
+
+<Meta of={GOVUKFooterStories} />
+
+# GOV.UK Footer
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/footer/)
+
+The Footer component provides copyright, licensing and other information about your service. Use the footer at the bottom of every page in your service.
+
+## Props
+
+<ArgsTable of={GOVUKFooter} />
+
+**Note:** as of June 25th 2025, this component will be affected by a GOV.UK brand refresh. The consuming application will handle applying the
+``govuk-template--rebranded`` class for certain visual updates. The user can toggle ``brandRefresh`` to true or false to denote whether or not
+the additional small crown will be displayed within the footer. This is to allow for differing time scales as applications gradually adopt the
+brand refresh.
+
+<br/>
+**FooterColumn**
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Required?</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>header</span></td>
+            <td><span>Optional</span></td>
+            <td><span>```string``` : The column header to display</span></td>
+        </tr>
+        <tr>
+            <td><span>columnClass</span></td>
+            <td><span>Optional</span></td>
+            <td><span>```string``` : Optional classes to define the layout of the columns, if users are implementing secondary navigation</span></td>
+        </tr>
+        <tr>
+            <td><span>listClass</span></td>
+            <td><span>Optional</span></td>
+            <td><span>```string``` : Optional classes to define the layout of the list, if users are implementing secondary navigation. Applies to the ```<ul>``` element</span></td>
+        </tr>
+        <tr>
+            <td><span>links</span></td>
+            <td><span>Required</span></td>
+            <td><span>Array of type ```FooterLinks``` : The links to be displayed</span></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+**FooterLinks**
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Required?</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>linkText</span></td>
+            <td><span>Required</span></td>
+            <td><span>```string``` : Text to be displayed with a link</span></td>
+        </tr>
+        <tr>
+            <td><span>linkHref</span></td>
+            <td><span>Required</span></td>
+            <td><span>```string``` : Value of the href for the anchor tag that will lead to what the link text declares</span></td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+**LicenceStatement**
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Required?</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>textStart</span></td>
+            <td><span>Required</span></td>
+            <td><span>```string``` : The start of the licencing statement</span></td>
+        </tr>
+        <tr>
+            <td><span>linkText</span></td>
+            <td><span>Required</span></td>
+            <td><span>```string``` : The text that will be displayed with the licencing statement link</span></td>
+        </tr>
+        <tr>
+            <td><span>linkHref</span></td>
+            <td><span>Required</span></td>
+            <td><span>```string``` : Value of the href for the anchor tag that will lead to more info on the type of licence</span></td>
+        </tr>
+        <tr>
+            <td><span>textEnd</span></td>
+            <td><span>Required</span></td>
+            <td><span>```string``` : The end of the licencing statement</span></td>
+        </tr>
+    </tbody>
+</table>
+
+## Details
+
+As a default, the component should display a copyright notice and the coat of arms. The type of licence should also be displayed. Use the Open Government
+Licence unless the National Archives have permitted the use of another type of licence. This default displays no links.
+<Canvas of={GOVUKFooterStories.Default}/>
+
+The component can also be displayed with links.
+<Canvas of={GOVUKFooterStories.WithLinks}/>
+
+Secondary navigation can be handled within the footer, but this should only be used when creating a GOV.UK service, to let a user navigate away from this
+service to somewhere else on the GOV.UK website.
+<Canvas of={GOVUKFooterStories.WithSecondaryNavigation} />

@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Checked Radio button Snapshot 1`] = `
+<div
+  className="govuk-radios__item"
+>
+  <input
+    className="govuk-radios__input"
+    defaultChecked={true}
+    id="radio-button"
+    name="radio-button"
+    type="radio"
+    value="yes"
+  />
+  <label
+    className="govuk-label govuk-radios__label"
+    htmlFor="radio-button"
+  >
+    Yes
+  </label>
+</div>
+`;
+
+exports[`Default Radio button Snapshot 1`] = `
+<div
+  className="govuk-radios__item"
+>
+  <input
+    className="govuk-radios__input"
+    id="radio-button"
+    name="radio-button"
+    type="radio"
+    value="yes"
+  />
+  <label
+    className="govuk-label govuk-radios__label"
+    htmlFor="radio-button"
+  >
+    Yes
+  </label>
+</div>
+`;
+
+exports[`Radio button with hint and revealed conditional content Snapshot 1`] = `
+[
+  <div
+    className="govuk-radios__item"
+  >
+    <input
+      aria-describedby="radio-button-item-hint"
+      className="govuk-radios__input"
+      defaultChecked={true}
+      id="radio-button"
+      name="radio-button"
+      type="radio"
+      value="yes"
+    />
+    <label
+      className="govuk-label govuk-radios__label"
+      htmlFor="radio-button"
+    >
+      Yes
+    </label>
+    <div
+      className="govuk-hint govuk-radios__hint"
+      id="radio-button-item-hint"
+    >
+      Radiobutton Hint Text
+    </div>
+  </div>,
+  <div
+    className="govuk-radios__conditional"
+    id="conditional-contact"
+  >
+    <div
+      data-testid="radiobuttonTestId"
+    >
+      <input
+        aria-label="label"
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`Radio button with hint text Snapshot 1`] = `
+<div
+  className="govuk-radios__item"
+>
+  <input
+    aria-describedby="radio-button-item-hint"
+    className="govuk-radios__input"
+    id="radio-button"
+    name="radio-button"
+    type="radio"
+    value="yes"
+  />
+  <label
+    className="govuk-label govuk-radios__label"
+    htmlFor="radio-button"
+  >
+    Yes
+  </label>
+  <div
+    className="govuk-hint govuk-radios__hint"
+    id="radio-button-item-hint"
+  >
+    Radiobutton Hint Text
+  </div>
+</div>
+`;
+
+exports[`Radio button with revealed conditional content Snapshot 1`] = `
+[
+  <div
+    className="govuk-radios__item"
+  >
+    <input
+      className="govuk-radios__input"
+      defaultChecked={true}
+      id="radio-button"
+      name="radio-button"
+      type="radio"
+      value="yes"
+    />
+    <label
+      className="govuk-label govuk-radios__label"
+      htmlFor="radio-button"
+    >
+      Yes
+    </label>
+  </div>,
+  <div
+    className="govuk-radios__conditional"
+    id="conditional-contact"
+  >
+    <div
+      data-testid="radiobuttonTestId"
+    >
+      <input
+        aria-label="label"
+      />
+    </div>
+  </div>,
+]
+`;

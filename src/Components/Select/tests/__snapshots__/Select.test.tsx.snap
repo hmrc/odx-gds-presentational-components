@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default select component Snapshot Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="select-component"
+    >
+      Select
+    </label>
+  </h1>
+  <select
+    className="govuk-select"
+    id="select-component"
+    name="selectComponent"
+  >
+    <option
+      value="valueOne"
+    >
+      Test 1
+    </option>
+    <option
+      value="valueTwo"
+    >
+      Test 2
+    </option>
+    <option
+      value="valueThree"
+    >
+      Test 3
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Select component with hint text and error text Snapshot Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="select-component"
+    >
+      Select
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="selectComponent-hint"
+  >
+    testHintText
+  </div>
+  <p
+    className="govuk-error-message"
+    id="selectComponent-error"
+  >
+    <span
+      className="govuk-visually-hidden"
+    >
+      Error:
+    </span>
+    testErrorText
+  </p>
+  <select
+    aria-describedby="selectComponent-hint selectComponent-error"
+    className="govuk-select govuk-select--error"
+    id="select-component"
+    name="selectComponent"
+  >
+    <option
+      value="valueOne"
+    >
+      Test 1
+    </option>
+    <option
+      value="valueTwo"
+    >
+      Test 2
+    </option>
+    <option
+      value="valueThree"
+    >
+      Test 3
+    </option>
+  </select>
+</div>
+`;
+
+exports[`Select component with preselected option Snapshot Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="select-component"
+    >
+      Select
+    </label>
+  </h1>
+  <select
+    className="govuk-select"
+    id="select-component"
+    name="selectComponent"
+    value="valueThree"
+  >
+    <option
+      value="valuedOne"
+    >
+      I am not selected
+    </option>
+    <option
+      value="valueTwo"
+    >
+      I am not selected
+    </option>
+    <option
+      value="valueThree"
+    >
+      I am preselected
+    </option>
+  </select>
+</div>
+`;

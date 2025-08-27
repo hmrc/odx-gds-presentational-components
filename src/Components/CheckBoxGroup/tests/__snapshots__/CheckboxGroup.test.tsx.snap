@@ -1,0 +1,368 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox group small checkboxes Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-checkboxes govuk-checkboxes--small"
+      data-module="govuk-checkboxes"
+    >
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="england"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id"
+        >
+          England
+        </label>
+      </div>
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id-2"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="scotland"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id-2"
+        >
+          Scotland
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Checkbox group small checkboxes, with errors Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <fieldset
+    aria-describedby="check-group-error"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <p
+      className="govuk-error-message"
+      id="check-group-error"
+    >
+      <span
+        className="govuk-visually-hidden"
+      >
+        Error:
+      </span>
+      Please select an answer
+    </p>
+    <div
+      className="govuk-checkboxes govuk-checkboxes--small"
+      data-module="govuk-checkboxes"
+    >
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="england"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id"
+        >
+          England
+        </label>
+      </div>
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id-2"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="scotland"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id-2"
+        >
+          Scotland
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Checkbox group with divider Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-checkboxes"
+      data-module="govuk-checkboxes"
+    >
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          aria-describedby="check-group-id-item-hint"
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="england"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id"
+        >
+          England
+        </label>
+        <div
+          className="govuk-hint govuk-checkboxes__hint"
+          id="check-group-id-item-hint"
+        >
+          Yes hint
+        </div>
+      </div>
+      <div
+        className="govuk-checkboxes__divider"
+      >
+        or
+      </div>
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          aria-describedby="check-group-id-3-item-hint"
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id-3"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="scotland"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id-3"
+        >
+          Scotland
+        </label>
+        <div
+          className="govuk-hint govuk-checkboxes__hint"
+          id="check-group-id-3-item-hint"
+        >
+          No hint
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Checkbox group with fieldset and option hint text Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    aria-describedby="check-group-hint"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-hint"
+      id="check-group-hint"
+    >
+      Check Group Hint Text
+    </div>
+    <div
+      className="govuk-checkboxes"
+      data-module="govuk-checkboxes"
+    >
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          aria-describedby="check-group-id-item-hint"
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="england"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id"
+        >
+          England
+        </label>
+        <div
+          className="govuk-hint govuk-checkboxes__hint"
+          id="check-group-id-item-hint"
+        >
+          Yes hint
+        </div>
+      </div>
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          aria-describedby="check-group-id-2-item-hint"
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id-2"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="scotland"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id-2"
+        >
+          Scotland
+        </label>
+        <div
+          className="govuk-hint govuk-checkboxes__hint"
+          id="check-group-id-2-item-hint"
+        >
+          No hint
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Default Checkbox group Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-checkboxes"
+      data-module="govuk-checkboxes"
+    >
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="england"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id"
+        >
+          England
+        </label>
+      </div>
+      <div
+        className="govuk-checkboxes__item"
+      >
+        <input
+          checked={false}
+          className="govuk-checkboxes__input"
+          id="check-group-id-2"
+          name="check-group"
+          onChange={[Function]}
+          type="checkbox"
+          value="scotland"
+        />
+        <label
+          className="govuk-label govuk-checkboxes__label"
+          htmlFor="check-group-id-2"
+        >
+          Scotland
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

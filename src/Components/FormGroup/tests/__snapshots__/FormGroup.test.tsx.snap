@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Formgroup default Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+</div>
+`;
+
+exports[`Formgroup label not heading Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <label
+    className="govuk-label"
+    htmlFor="formgroup-id"
+  >
+    Form Group Test Label
+  </label>
+  <input
+    id="formgroup-id"
+    name="FormgroupTestName"
+  />
+</div>
+`;
+
+exports[`Formgroup overriden error prefix Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+</div>
+`;
+
+exports[`Formgroup with children Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="FormgroupTestName-hint"
+  >
+    hint text
+  </div>
+  <p
+    className="govuk-error-message"
+    id="FormgroupTestName-error"
+  >
+    <span
+      className="govuk-visually-hidden"
+    >
+      Error:
+    </span>
+    Error message
+  </p>
+  <input
+    aria-describedby="FormgroupTestName-hint FormgroupTestName-error"
+    id="formgroup-id"
+    name="FormgroupTestName"
+  />
+</div>
+`;
+
+exports[`Formgroup with error Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <p
+    className="govuk-error-message"
+    id="FormgroupTestName-error"
+  >
+    <span
+      className="govuk-visually-hidden"
+    >
+      Error:
+    </span>
+    Error message
+  </p>
+</div>
+`;
+
+exports[`Formgroup with functional component children Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="FormgroupTestName-hint"
+  >
+    hint text
+  </div>
+  <div>
+    <span>
+      Before
+    </span>
+    <input
+      aria-describedby="FormgroupTestName-hint"
+      id="formgroup-id"
+      name="FormgroupTestName"
+    />
+  </div>
+</div>
+`;
+
+exports[`Formgroup with hint and error Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="FormgroupTestName-hint"
+  >
+    hint text
+  </div>
+  <p
+    className="govuk-error-message"
+    id="FormgroupTestName-error"
+  >
+    <span
+      className="govuk-visually-hidden"
+    >
+      Error:
+    </span>
+    Error message
+  </p>
+</div>
+`;
+
+exports[`Formgroup with hint text Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="FormgroupTestName-hint"
+  >
+    hint text
+  </div>
+</div>
+`;
+
+exports[`Formgroup with label classes Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l govuk-heading-xl"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="FormgroupTestName-hint"
+  >
+    hint text
+  </div>
+</div>
+`;
+
+exports[`Formgroup with string children Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="formgroup-id"
+    >
+      Form Group Test Label
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="FormgroupTestName-hint"
+  >
+    hint text
+  </div>
+  Plain Text
+</div>
+`;

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alpha PhaseBanner Snapshot 1`] = `
+<div
+  className="govuk-phase-banner"
+>
+  <p
+    className="govuk-phase-banner__content"
+  >
+    <strong
+      className="govuk-tag govuk-phase-banner__content__tag"
+    >
+      Alpha
+    </strong>
+    <span
+      className="govuk-phase-banner__text"
+    >
+      Test content 
+      <a
+        className="govuk-link"
+        href="#"
+      >
+        test feedback content
+      </a>
+      .
+    </span>
+  </p>
+</div>
+`;
+
+exports[`Beta PhaseBanner Snapshot 1`] = `
+<div
+  className="govuk-phase-banner"
+>
+  <p
+    className="govuk-phase-banner__content"
+  >
+    <strong
+      className="govuk-tag govuk-phase-banner__content__tag"
+    >
+      Beta
+    </strong>
+    <span
+      className="govuk-phase-banner__text"
+    >
+      Test content 
+      <a
+        className="govuk-link"
+        href="#"
+      >
+        test feedback content
+      </a>
+      .
+    </span>
+  </p>
+</div>
+`;

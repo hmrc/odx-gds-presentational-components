@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default fieldset Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Test Label
+      </h1>
+    </legend>
+    <label
+      htmlFor="testInputId_1"
+    >
+      testInputLabel_1
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_1"
+      id="testInputId_1"
+    />
+    <label
+      htmlFor="testInputId_2"
+    >
+      testInputLabel_2
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_2"
+      id="testInputId_2"
+    />
+    <label
+      htmlFor="testInputId_3"
+    >
+      testInputLabel_3
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_3"
+      id="testInputId_3"
+    />
+  </fieldset>
+</div>
+`;
+
+exports[`Fieldset with errorText Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <fieldset
+    aria-describedby="FieldsetName-error"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Test Label
+      </h1>
+    </legend>
+    <p
+      className="govuk-error-message"
+      id="FieldsetName-error"
+    >
+      <span
+        className="govuk-visually-hidden"
+      >
+        Error:
+      </span>
+      Something is wrong
+    </p>
+    <label
+      htmlFor="testInputId_1"
+    >
+      testInputLabel_1
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_1"
+      id="testInputId_1"
+    />
+    <label
+      htmlFor="testInputId_2"
+    >
+      testInputLabel_2
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_2"
+      id="testInputId_2"
+    />
+    <label
+      htmlFor="testInputId_3"
+    >
+      testInputLabel_3
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_3"
+      id="testInputId_3"
+    />
+  </fieldset>
+</div>
+`;
+
+exports[`Fieldset with hintText Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    aria-describedby="FieldsetName-hint"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Test Label
+      </h1>
+    </legend>
+    <div
+      className="govuk-hint"
+      id="FieldsetName-hint"
+    >
+      hint text
+    </div>
+    <label
+      htmlFor="testInputId_1"
+    >
+      testInputLabel_1
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_1"
+      id="testInputId_1"
+    />
+    <label
+      htmlFor="testInputId_2"
+    >
+      testInputLabel_2
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_2"
+      id="testInputId_2"
+    />
+    <label
+      htmlFor="testInputId_3"
+    >
+      testInputLabel_3
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_3"
+      id="testInputId_3"
+    />
+  </fieldset>
+</div>
+`;
+
+exports[`Fieldset with hintText and errorText Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <fieldset
+    aria-describedby="FieldsetName-hint FieldsetName-error"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Test Label
+      </h1>
+    </legend>
+    <div
+      className="govuk-hint"
+      id="FieldsetName-hint"
+    >
+      hint text
+    </div>
+    <p
+      className="govuk-error-message"
+      id="FieldsetName-error"
+    >
+      <span
+        className="govuk-visually-hidden"
+      >
+        Error:
+      </span>
+      Something is wrong
+    </p>
+    <label
+      htmlFor="testInputId_1"
+    >
+      testInputLabel_1
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_1"
+      id="testInputId_1"
+    />
+    <label
+      htmlFor="testInputId_2"
+    >
+      testInputLabel_2
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_2"
+      id="testInputId_2"
+    />
+    <label
+      htmlFor="testInputId_3"
+    >
+      testInputLabel_3
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_3"
+      id="testInputId_3"
+    />
+  </fieldset>
+</div>
+`;
+
+exports[`LegendIsHeading is false Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend"
+    >
+      Test Label
+    </legend>
+    <label
+      htmlFor="testInputId_1"
+    >
+      testInputLabel_1
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_1"
+      id="testInputId_1"
+    />
+    <label
+      htmlFor="testInputId_2"
+    >
+      testInputLabel_2
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_2"
+      id="testInputId_2"
+    />
+    <label
+      htmlFor="testInputId_3"
+    >
+      testInputLabel_3
+    </label>
+    <input
+      className="fieldsetTest"
+      data-testid="formgroup-inner-test_3"
+      id="testInputId_3"
+    />
+  </fieldset>
+</div>
+`;

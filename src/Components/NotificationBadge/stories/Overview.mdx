@@ -1,0 +1,25 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as NotificationBadgeStories from './NotificationBadge.stories';
+import { NotificationBadge } from '../NotificationBadge'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={NotificationBadgeStories} />
+
+# Notification Badge
+[HMRC Design System documentation](https://design.tax.service.gov.uk/hmrc-design-patterns/notification-badge/)
+
+<ArgsTable of={NotificationBadge} />
+
+The Notification Badge should be used to inform users that there is new information to view (e.g. unread messages) and only
+when the number of notifications changes when a user performs an action.
+
+The Notification badge is expected to be used along side another element to which the notification badge count applies.
+
+The Notification Badge component should be provided with a ```notificationCount``` value, which will be displayed in the badge.
+<Canvas of={NotificationBadgeStories.Default}/>
+
+If the ```notificationCount``` is 0, the Badge will not be rendered
+<Canvas of={NotificationBadgeStories.ZeroNotifications}/>
+
+If the ```notificationCount``` is greater than 99, the badge will show 99+
+<Canvas of={NotificationBadgeStories.MoreThan99Notifications}/>

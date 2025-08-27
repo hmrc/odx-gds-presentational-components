@@ -1,0 +1,61 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as FormGroupStories from './FormGroup.stories';
+import { FormGroup } from '../FormGroup';
+import { ArgsTable } from '@storybook/addon-docs';
+import { StoryPhaseBanner, StoryPhaseBannerStyles } from '../../../../.storybook/decorators/StoryPhaseBanner'
+
+<Meta of={FormGroupStories} />
+<StoryPhaseBanner style={StoryPhaseBannerStyles.Guideline}
+  message={`The Formgroup component has been built to support other components (such as the Text Input), and is not expected to be used itself. However this documentation shows the expected props
+  of the Formgroup component, which can be passed to the components which make use of it (such as the Text Input) `} />
+# Form Group
+
+Infrastructure component used to simplify label, hint, error handling for inputs.
+
+The form group component expects a single 'input element' as a child and supporting props ```label```, ```name``` and ```id```
+The FormGroup component will then add the name and id attributes to the input child, and handle the linking of the lable with the 'for' attribute,
+and passed ```hintText``` and ```errorText``` text with the aria-describedby attribute, internally
+
+Other props can be passed to the form group to control the label display: ```labelIsHeading``` and ```labelClasses```
+You can also override the hidden text prefixed to the error message, in case of need for translation with ```errorPrefix``` (This value defaults to 'Error:' if not provided)
+
+## Props
+<ArgsTable of={FormGroup} />
+
+## Details
+
+Form group component defaults to setting its label as page header
+<Canvas of={FormGroupStories.Default}/>
+But can be set to not do this, by setting labelIsHeading as false
+<Canvas of={FormGroupStories.LabelNotHeading}/>
+
+The Form group can accept either a react node or a functional component as children.
+The Form group Component will attempt to manage the aria-describedby ids for its children if there is hint or error text.
+
+### A note about handling of describedby ids
+The most reliable way to do this is pass a Functional Component, which receives an object as props (formgroupprops).
+The component should then spread these props in the input component
+e.g.
+```(formGroupProps) =>  <wrapper><input {...formGroupProps} /></wrapper>```
+This is especially useful when the input is wrapped or has prefixes/suffixes.
+
+Alternatively, if children is a reactElement, the Form group will attempt to clone it and append the aria-describedby attributes, however this
+will only correctly work if the element is a pure input.
+
+Form group also handles wrapping an input with
+Hint text with the ```hintText``` property:
+<Canvas of={FormGroupStories.HintText}/>
+
+and Error message with the ```errorText``` property:
+<Canvas of={FormGroupStories.ErrorText}/>
+
+
+The Error message is prefixed with a hidden value for screen reader users, by default this is 'Error:', however this can be overriden for translation
+(As this is hidden, you will need to inspect the page element to see how this override impacts the component
+<Canvas of={FormGroupStories.OverrideErrorTextPrefix}/>
+
+
+You can add additional classes to the label with the **labelClasses** property, e.g. you could override the label font size
+<Canvas of={FormGroupStories.AdditionalLabelClasses}/>
+
+

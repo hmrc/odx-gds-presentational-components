@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ResearchBanner component should match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="hmrc-user-research-banner hmrc-user-research-banner--show"
+    data-module="hmrc-user-research-banner"
+  >
+    <div
+      class="hmrc-user-research-banner__container govuk-width-container"
+    >
+      <div
+        class="hmrc-user-research-banner__text"
+      >
+        <h2
+          class="govuk-heading-s hmrc-user-research-banner__title govuk-!-margin-bottom-1"
+        >
+          Help make GOV.UK better
+        </h2>
+        <a
+          class="govuk-link govuk-link--inverse"
+          href="https://example.com"
+          rel="noreferrer noopener"
+          target="_blank"
+        >
+          Sign up to take part in research (opens in new tab)
+        </a>
+      </div>
+      <div
+        class="hmrc-user-research-banner__text"
+      >
+        <button
+          class="govuk-button govuk-button--secondary hmrc-user-research-banner__close"
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            Hide message
+          </span>
+          <span
+            class="govuk-visually-hidden"
+          >
+            Hide message. I do not want to take part in research
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,40 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+
+import  * as GOVUKHeaderStories from './GOVUKHeader.stories';
+import GOVUKHeader from '../GOVUKHeader';
+import HeaderData from '../GOVUKHeader.types';
+
+<Meta of={GOVUKHeaderStories} />
+
+# GOV.UK Header
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/header/)
+
+## Props
+
+<ArgsTable of={GOVUKHeader} />
+
+### GOVUKHeader Field Data
+<p>
+GOVUKHeader data accepts the following properties:
+</p>
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>serviceHome</span></td>
+            <td><span>Required : ```string``` : The link that is navigated to when the GOV.UK logo is clicked</span></td>
+        </tr>
+    </tbody>
+</table>
+
+## Details
+**There is no navigation provided outside of navigating home. If navigation is requried then use this component in conjunction with the Navigation component**
+<Canvas of={GOVUKHeaderStories.Default}/>
+
+

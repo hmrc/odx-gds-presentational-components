@@ -1,0 +1,22 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as ResearchBannerStories from './ResearchBanner.stories';
+import { ResearchBanner } from '../ResearchBanner'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={ResearchBannerStories} />
+
+# Research Banner
+[HMRC Design System documentation](https://design.tax.service.gov.uk/hmrc-design-patterns/research-banner/)
+
+<ArgsTable of={ResearchBanner} />
+
+The research banner invites users to sign up to take part in user research.
+
+Use this pattern to encourage users to join our research panel.
+
+
+Linear journeys without close button
+<Canvas of={ResearchBannerStories.Default}/>
+
+Non-linear journeys with close button that says ‘Hide message’.
+<Canvas of={ResearchBannerStories.WithCloseButton}/>

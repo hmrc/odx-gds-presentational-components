@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default summary list row Snapshot 1`] = `
+<dl>
+  <div
+    className="govuk-summary-list__row"
+  >
+    <dt
+      className="govuk-summary-list__key"
+    >
+      Row Key
+    </dt>
+    <dd
+      className="govuk-summary-list__value"
+    >
+      Row Value
+    </dd>
+  </div>
+</dl>
+`;
+
+exports[`Default summary list row with multiple actions Snapshot 1`] = `
+<dl>
+  <div
+    className="govuk-summary-list__row"
+  >
+    <dt
+      className="govuk-summary-list__key"
+    >
+      Row Key
+    </dt>
+    <dd
+      className="govuk-summary-list__value"
+    >
+      Row Value
+    </dd>
+    <dd
+      className="govuk-summary-list__actions"
+    >
+      <ul>
+        <li
+          className="govuk-summary-list__actions-list-item"
+        >
+          <a
+            className="govuk-link"
+            href="#"
+            onClick={[Function]}
+          >
+            Change
+          </a>
+        </li>
+        <li
+          className="govuk-summary-list__actions-list-item"
+        >
+          <a
+            className="govuk-link"
+            href="#"
+            onClick={[Function]}
+          >
+            Delete
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+`;
+
+exports[`Default summary list row with multiple actions and extra link attributes Snapshot 1`] = `
+<dl>
+  <div
+    className="govuk-summary-list__row"
+  >
+    <dt
+      className="govuk-summary-list__key"
+    >
+      Row Key
+    </dt>
+    <dd
+      className="govuk-summary-list__value"
+    >
+      Row Value
+    </dd>
+    <dd
+      className="govuk-summary-list__actions"
+    >
+      <ul>
+        <li
+          className="govuk-summary-list__actions-list-item"
+        >
+          <a
+            className="govuk-link"
+            data-test-id="changelink"
+            href="#"
+            onClick={[Function]}
+          >
+            Change
+          </a>
+        </li>
+        <li
+          className="govuk-summary-list__actions-list-item"
+        >
+          <a
+            className="govuk-link"
+            data-test-id="deletelink"
+            href="#"
+            onClick={[Function]}
+          >
+            Delete
+          </a>
+        </li>
+      </ul>
+    </dd>
+  </div>
+</dl>
+`;
+
+exports[`Default summary list row with one action and extra link attributes Snapshot 1`] = `
+<dl>
+  <div
+    className="govuk-summary-list__row"
+  >
+    <dt
+      className="govuk-summary-list__key"
+    >
+      Row Key
+    </dt>
+    <dd
+      className="govuk-summary-list__value"
+    >
+      Row Value
+    </dd>
+    <dd
+      className="govuk-summary-list__actions"
+    >
+      <a
+        className="govuk-link"
+        data-test-id="link"
+        href="#"
+        onClick={[Function]}
+      >
+        Change
+      </a>
+    </dd>
+  </div>
+</dl>
+`;
+
+exports[`Summary list row with one action Snapshot 1`] = `
+<dl>
+  <div
+    className="govuk-summary-list__row"
+  >
+    <dt
+      className="govuk-summary-list__key"
+    >
+      Row Key
+    </dt>
+    <dd
+      className="govuk-summary-list__value"
+    >
+      Row Value
+    </dd>
+    <dd
+      className="govuk-summary-list__actions"
+    >
+      <a
+        className="govuk-link"
+        href="#"
+        onClick={[Function]}
+      >
+        Change
+      </a>
+    </dd>
+  </div>
+</dl>
+`;

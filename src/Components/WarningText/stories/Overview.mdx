@@ -1,0 +1,20 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import  * as WarningTextStories from './WarningText.stories';
+import { WarningText } from '../WarningText';
+
+<Meta of={WarningTextStories} />
+
+# Warning Text
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/warning-text/)
+
+## Props 
+
+<ArgsTable of={WarningText} />
+
+## Details
+
+The Warning Text banner will accept 'iconFallbackText' and 'text' property.
+<Canvas of={WarningTextStories.Default} />
+
+

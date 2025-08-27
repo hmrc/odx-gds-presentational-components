@@ -1,0 +1,51 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import  * as CheckBoxGroupStories from './CheckBoxGroup.stories';
+import { CheckBoxGroup } from '../CheckBoxGroup'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={CheckBoxGroupStories} />
+
+# Checkboxes Group
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/checkboxes/)
+
+The CheckBoxes group component is an implementation of the Gov Design System group checkboxes together in a ```<fieldset>``` with a ```<legend>```.
+This component is expected to be used for questions for which a user can select one or Multiple option from a list.
+
+<ArgsTable of={CheckBoxGroup} />
+
+## Details
+
+The CheckBoxes group **requires** an id property, and a list of options and optional text dividers
+The id property will be used as the name for options
+
+An option is made up of required ```value``` and ```label``` properties, with optional ```conditionalContent``` ```hintText``` properties.
+For example ```{value: 'yes', label: 'Yes', hintText: 'Yes hint text'}```
+  The name of each option will be the id of the group, and the id of each option will be generated from the id of the group, and it's order
+
+A divider is defined as an object with a divider property e.g. ```{divider: 'Or'}```
+<Canvas of={CheckBoxGroupStories.Default} />
+
+<Canvas of={CheckBoxGroupStories.DividerExample} />
+
+### onChange handling
+By default, the checkboxes in the group will use a changeHandler that simply checks a checkbox when checked.
+For custom change handling, pass an ```onChange``` function to the group, which will be applied as onChange property to All Checkbox list.
+To define which checkbox is currently selected, pass all the values of the checkbox ```value``` property of the group
+<Canvas of={CheckBoxGroupStories.ChangeHandlerExample} />
+
+
+## Example with options with conditional content
+<Canvas of={CheckBoxGroupStories.ConditionalQuestions} />
+
+## Example with options with hint text
+<Canvas of={CheckBoxGroupStories.HintText} />
+
+To display smaller Checkboxes buttons pass the ```small``` property
+<Canvas of={CheckBoxGroupStories.Smallercheckboxes} />
+
+
+
+
+**The date input uses the fieldset component, and so any fieldset props can also be passed via the Checkbox group**
+[Fieldset documentation](/docs/gds-components-field-set--overview)
+

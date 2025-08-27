@@ -1,0 +1,31 @@
+import React from 'react'
+import renderer from 'react-test-renderer'
+import { cleanup, render } from '@testing-library/react'
+import { snapshotAndAxeTest } from 'testHelpers'
+import { X } from '..'
+import '@testing-library/jest-dom'
+
+/****************
+ * SET UP
+ ****************/
+// Note: running cleanup afterEach is done automatically for you in @testing-library/react@9.0.0 or higher
+// unmount and cleanup DOM after the test is finished.
+afterEach(cleanup)
+
+/****************
+ * SNAPHOTS
+ ****************/
+
+snapshotAndAxeTest('A Snapshot', <X>)
+
+/****************
+ * ASSERTIONS
+ ****************/
+
+it('x should happen', () => {
+  const {getByRole} = render(
+    <X>
+  )
+
+  expect(x).toBe(y)
+})

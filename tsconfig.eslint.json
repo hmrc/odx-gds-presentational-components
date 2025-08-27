@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "declaration": true,
+    "declarationDir": "dist",
+    "sourceMap": true,
+    "strict": true,
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "jsx": "react",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "emitDeclarationOnly": true,
+    "paths": {
+      "react": ["./node_modules/@types/react"]
+    }
+  },
+  "exclude": ["rollup.config_old.mjs", "*.config.*", "__mocks__/**/*"]
+}

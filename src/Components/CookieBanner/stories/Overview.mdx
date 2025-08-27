@@ -1,0 +1,39 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import * as CookieStories from './CookieBanner.stories';
+import { CookieBanner } from '../CookieBanner';
+import { CookieBannerProps } from '../CookieBanner.types';
+
+<Meta of={CookieStories} />
+
+# Cookie Banner
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/cookie-banner/)
+
+## Props
+
+<ArgsTable of={CookieBanner} />
+
+
+## Usage  
+
+The Cookie Banner component allows the user to accept or reject non-essential cookies for a service. 
+This component must be used for aby service sets cookies on the users device.
+
+
+### Details
+There are 4 possible visual states: awaiting action, accepted, rejected, and hidden
+On initial render the banner will be in the 'awaiting action' state, the ```serviceName``` will be shown as well as the ```standardDescription``` 
+
+Interacting with accept button will call ```acceptedHandler```, and then change the state to 'accepted'.
+The 'accepted' state will show the ```acceptedDescription```, hide cookies button, and the view cookies link (href to be passed as a prop)
+
+Interacting with reject button will call ```rejectedHandler```, and then change the state to 'rejected'.
+The 'rejected' state will show the ```rejectedDescription```, hide cookies button, and the view cookies link (href to be passed via ```cookieLink```)
+
+Interacting with the hide cookies button will change to state to 'hidden'.
+In hidden state, the banner will render nothing.
+
+The banner states are set using react's UseState hook, and thus will not persist between sessions. The control of hiding the cookie banner between page loads is left to the consumer.
+
+<Canvas of={CookieStories.Default}/>
+

@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Cookie Banner Snapshot 1`] = `
+<div
+  aria-label="Cookies on cookie test"
+  className="govuk-cookie-banner"
+  data-nosnippet={true}
+  role="region"
+>
+  <div
+    className="govuk-cookie-banner__message govuk-width-container"
+  >
+    <div
+      className="govuk-grid-row"
+    >
+      <div
+        className="govuk-grid-column-two-thirds"
+      >
+        <h2
+          className="govuk-cookie-banner__heading govuk-heading-m"
+        >
+          Cookies on cookie test
+        </h2>
+        <div
+          className="govuk-cookie-banner__content"
+        >
+          <p
+            className="govuk-body"
+            data-testid="standard description"
+          >
+            generic cookies description
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="govuk-button-group"
+    >
+      <button
+        className="govuk-button"
+        onClick={[Function]}
+        type="button"
+      >
+        Accept cookies
+      </button>
+      <button
+        className="govuk-button"
+        onClick={[Function]}
+        type="button"
+      >
+        Reject cookies
+      </button>
+      <a
+        className="govuk-link"
+        href="test link"
+      >
+        View cookies
+      </a>
+    </div>
+  </div>
+</div>
+`;

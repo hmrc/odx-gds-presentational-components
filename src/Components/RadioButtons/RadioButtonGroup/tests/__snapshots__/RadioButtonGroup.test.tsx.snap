@@ -1,0 +1,431 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Radio group Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-radios"
+      data-module="govuk-radios"
+    >
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="yes"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id"
+        >
+          Yes
+        </label>
+      </div>
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id-2"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="no"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id-2"
+        >
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio group inline display Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-radios govuk-radios--inline"
+      data-module="govuk-radios"
+    >
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="yes"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id"
+        >
+          Yes
+        </label>
+      </div>
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id-2"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="no"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id-2"
+        >
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio group small radios Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-radios govuk-radios--small"
+      data-module="govuk-radios"
+    >
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="yes"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id"
+        >
+          Yes
+        </label>
+      </div>
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id-2"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="no"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id-2"
+        >
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio group small radios, inline with errors Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <fieldset
+    aria-describedby="radio-group-error"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <p
+      className="govuk-error-message"
+      id="radio-group-error"
+    >
+      <span
+        className="govuk-visually-hidden"
+      >
+        Error:
+      </span>
+      Please select an answer
+    </p>
+    <div
+      className="govuk-radios govuk-radios--small govuk-radios--inline"
+      data-module="govuk-radios"
+    >
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="yes"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id"
+        >
+          Yes
+        </label>
+      </div>
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id-2"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="no"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id-2"
+        >
+          No
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio group with divider Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-radios"
+      data-module="govuk-radios"
+    >
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          aria-describedby="radio-group-id-item-hint"
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="yes"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id"
+        >
+          Yes
+        </label>
+        <div
+          className="govuk-hint govuk-radios__hint"
+          id="radio-group-id-item-hint"
+        >
+          Yes hint
+        </div>
+      </div>
+      <div
+        className="govuk-radios__divider"
+      >
+        or
+      </div>
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          aria-describedby="radio-group-id-3-item-hint"
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id-3"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="no"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id-3"
+        >
+          No
+        </label>
+        <div
+          className="govuk-hint govuk-radios__hint"
+          id="radio-group-id-3-item-hint"
+        >
+          No hint
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Radio group with fieldset and option hint text Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    aria-describedby="radio-group-hint"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Select one option
+      </h1>
+    </legend>
+    <div
+      className="govuk-hint"
+      id="radio-group-hint"
+    >
+      Radio Group Hint Text
+    </div>
+    <div
+      className="govuk-radios"
+      data-module="govuk-radios"
+    >
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          aria-describedby="radio-group-id-item-hint"
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="yes"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id"
+        >
+          Yes
+        </label>
+        <div
+          className="govuk-hint govuk-radios__hint"
+          id="radio-group-id-item-hint"
+        >
+          Yes hint
+        </div>
+      </div>
+      <div
+        className="govuk-radios__item"
+      >
+        <input
+          aria-describedby="radio-group-id-2-item-hint"
+          className="govuk-radios__input"
+          defaultChecked={false}
+          id="radio-group-id-2"
+          name="radio-group-id"
+          onChange={[Function]}
+          type="radio"
+          value="no"
+        />
+        <label
+          className="govuk-label govuk-radios__label"
+          htmlFor="radio-group-id-2"
+        >
+          No
+        </label>
+        <div
+          className="govuk-hint govuk-radios__hint"
+          id="radio-group-id-2-item-hint"
+        >
+          No hint
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Tag Component Snapshot 1`] = `
+<strong
+  className="govuk-tag govuk-tag--blue"
+>
+  Tag, your it
+</strong>
+`;
+
+exports[`Tag Component with colour Snapshot 1`] = `
+<strong
+  className="govuk-tag govuk-tag--green"
+>
+  Tag, your it
+</strong>
+`;
