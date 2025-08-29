@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check Box with hint text Snapshot 1`] = `
+<div
+  className="govuk-checkboxes__item"
+>
+  <input
+    aria-describedby="check-box-item-hint"
+    className="govuk-checkboxes__input"
+    id="check-box"
+    name="check-box"
+    onChange={[Function]}
+    type="checkbox"
+    value="yes"
+  />
+  <label
+    className="govuk-label govuk-checkboxes__label"
+    htmlFor="check-box"
+  >
+    Yes
+  </label>
+  <div
+    className="govuk-hint govuk-checkboxes__hint"
+    id="check-box-item-hint"
+  >
+    CheckBox Hint Text
+  </div>
+</div>
+`;
+
+exports[`Check Box with revealed conditional content Snapshot 1`] = `
+[
+  <div
+    className="govuk-checkboxes__item"
+  >
+    <input
+      checked={true}
+      className="govuk-checkboxes__input"
+      id="check-box"
+      name="check-box"
+      onChange={[Function]}
+      type="checkbox"
+      value="yes"
+    />
+    <label
+      className="govuk-label govuk-checkboxes__label"
+      htmlFor="check-box"
+    >
+      Yes
+    </label>
+  </div>,
+  <div
+    className="govuk-checkboxes__conditional"
+    id="check-box-contact"
+  >
+    <div
+      data-testid="checkboxTestId"
+    >
+      <input
+        aria-label="label"
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`Checkbox with hint and revealed conditional content Snapshot 1`] = `
+[
+  <div
+    className="govuk-checkboxes__item"
+  >
+    <input
+      aria-describedby="check-box-item-hint"
+      checked={true}
+      className="govuk-checkboxes__input"
+      id="check-box"
+      name="check-box"
+      onChange={[Function]}
+      type="checkbox"
+      value="yes"
+    />
+    <label
+      className="govuk-label govuk-checkboxes__label"
+      htmlFor="check-box"
+    >
+      Yes
+    </label>
+    <div
+      className="govuk-hint govuk-checkboxes__hint"
+      id="check-box-item-hint"
+    >
+      CheckBox Hint Text
+    </div>
+  </div>,
+  <div
+    className="govuk-checkboxes__conditional"
+    id="check-box-contact"
+  >
+    <div
+      data-testid="checkboxTestId"
+    >
+      <input
+        aria-label="label"
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`Default Check Box Snapshot 1`] = `
+<div
+  className="govuk-checkboxes__item"
+>
+  <input
+    className="govuk-checkboxes__input"
+    id="check-box"
+    name="check-box"
+    onChange={[Function]}
+    type="checkbox"
+    value="yes"
+  />
+  <label
+    className="govuk-label govuk-checkboxes__label"
+    htmlFor="check-box"
+  >
+    Yes
+  </label>
+</div>
+`;
+
+exports[`Default Checked Check Box Snapshot 1`] = `
+<div
+  className="govuk-checkboxes__item"
+>
+  <input
+    checked={true}
+    className="govuk-checkboxes__input"
+    id="check-box"
+    name="check-box"
+    onChange={[Function]}
+    type="checkbox"
+    value="yes"
+  />
+  <label
+    className="govuk-label govuk-checkboxes__label"
+    htmlFor="check-box"
+  >
+    Yes
+  </label>
+</div>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Modal Snapshot 1`] = `
+[
+  <div
+    aria-labelledby="title"
+    aria-modal="true"
+    className="hmrc-timeout-dialog"
+    id="hmrc-timeout-dialog"
+    onKeyDown={[Function]}
+    role="dialog"
+    tabIndex={-1}
+  >
+    <h1
+      id="title"
+    >
+      Child
+    </h1>
+    <p>
+      JSX nodes
+    </p>
+    <div>
+      Modal Content
+      <button
+        className="govuk-button"
+        onClick={[Function]}
+      >
+        Stay logged in
+      </button>
+    </div>
+  </div>,
+  <div
+    className="hmrc-timeout-overlay"
+    id="hmrc-timeout-overlay"
+  />,
+]
+`;

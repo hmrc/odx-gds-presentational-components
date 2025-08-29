@@ -1,0 +1,34 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as SelectStories from './Select.stories';
+import { Select } from '../Select'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={SelectStories} />
+
+# Select
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/select/)
+
+The select component allows users to choose an option from a list.
+
+This component should only be used as a last resort due to accessibility issues. Some users may struggle to close the select
+or may try to type into the select component. Alternative approaches such as asking questions, text input or radio buttons are
+suggested.
+
+## Props
+
+<ArgsTable of={Select} />
+
+## Details
+
+The component will default to display the label as page heading, as per guidance for displaying a single question per page.
+<Canvas of={SelectStories.Default}/>
+
+To override the behaviour, and not set the label as page heading, set the labelIsHeading property to false
+<Canvas of={SelectStories.WithLabelNotHeading}/>
+
+The component will render hint text and error text if the corresponding properties are not null.
+<Canvas of={SelectStories.WithErrorText} />
+
+To display a particular option as the default, then ```selected: true``` must be passed alongside this option as part of ```selectOptions```.
+<Canvas of={SelectStories.WithPreselectedOption} />
+

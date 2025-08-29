@@ -1,0 +1,45 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import  * as TextInputStories from './TextInput.stories';
+import { TextInput } from '../TextInput';
+
+<Meta of={TextInputStories} />
+
+# Text Input
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/text-input/)
+
+The text input component should be used to ask users for a single line of input, such as name or phonenumber
+
+## Props
+
+<ArgsTable of={TextInput} />
+
+## Details
+
+The component will default to display the label as page heading, as per guidance for displaying a single question per page.
+<Canvas of={TextInputStories.Default}/>
+
+To override the behaviour, and not set the label as page heading, set the labelIsHeading property to false
+<Canvas of={TextInputStories.LabelNotHeading}/>
+
+The component will render hint text and error text if the corresponding property is not null.
+<Canvas of={TextInputStories.WithErrorText} />
+
+### To set input attributes, use the inputProps prop, which can take any InputElement attributes, such as autocomplete or spellcheck...
+
+Autocomplete attribute can be set to help users complete forms more quickly. (e.g ```inputProps={{ autoComplete: 'firstname'}}```)
+<Canvas of={TextInputStories.WithAutocomplete} />
+
+Spellcheck can be enabled for inputs. (e.g ```inputProps={{ spellcheck: true}}```)
+<Canvas of={TextInputStories.WithSpellcheck} />
+
+Any extra classes can be passed with the classes prop, for example this can be used to:
+- define input width ('govuk-input--width-5')
+- to add additional spacing between characters, to visually separate them, to assist users, for example with codes or sequences a user may not have memorised. ('govuk-input--extra-letter-spacing')
+<Canvas of={TextInputStories.FixedWidth5Chars} />
+
+Prefixes and suffixes are handled, simply provide the content expected in either
+<Canvas of={TextInputStories.WithPrefixAndSuffix} />
+
+<Canvas of={TextInputStories.Default}/>
+

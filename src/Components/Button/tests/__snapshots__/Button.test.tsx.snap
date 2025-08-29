@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default button Component Snapshot 1`] = `
+<button
+  className="govuk-button"
+  onClick={[MockFunction]}
+>
+  Click me
+</button>
+`;
+
+exports[`Disabled button Component Snapshot 1`] = `
+<button
+  aria-disabled={true}
+  className="govuk-button"
+  disabled={true}
+  onClick={[MockFunction]}
+>
+  Click me
+</button>
+`;
+
+exports[`Inverse button Component Snapshot 1`] = `
+<button
+  className="govuk-button govuk-button--inverse"
+  onClick={[MockFunction]}
+>
+  Click me
+</button>
+`;
+
+exports[`Secondary button Component Snapshot 1`] = `
+<button
+  className="govuk-button govuk-button--secondary"
+  onClick={[MockFunction]}
+>
+  Click me
+</button>
+`;
+
+exports[`Warning button Component Snapshot 1`] = `
+<button
+  className="govuk-button govuk-button--warning"
+  onClick={[MockFunction]}
+>
+  Click me
+</button>
+`;

@@ -1,0 +1,44 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as ErrorSummaryStories from './ErrorSummary.stories';
+import { ErrorSummary } from '../ErrorSummary'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={ErrorSummaryStories} />
+
+# Error Summary
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/error-summary/)
+
+## Props
+<ArgsTable of={ErrorSummary} />
+
+## Details
+
+The Error Summary component should be rendered when there are error messages related to inputs on a page, even if there is only one input on the screen.
+
+### Providing errors and their target fields
+The component expects a list of error messages and id's of the field to which the message relates.
+e.g. ```[{message: ‘Enter a name’, targetFieldId: 'name-field'}, {message: ‘Date must be in the future’,  targetFieldId: ‘date-field’}]```
+
+The targetFieldId defines the id of the field to which the error relates, and to which focus will be moved upon 'clicking' the error message link.
+
+<Canvas of={ErrorSummaryStories.Default}/>
+
+### Overriding summary heading
+By default, the Error Summary will set the summary heading to 'There is a problem' - as suggested by GDS, however, you can override this
+with the ```heading``` property.
+
+<Canvas of={ErrorSummaryStories.CustomSummmaryHeading}/>
+
+### Focus
+A note on focus management. GDS defines that page focus should be moved to the Error summary. This component, does this by default,
+moving focus to the Summary on first render, and whenever the component receives a new list of errors. To disable this behaviour, and manage focus manually, pass the
+```autoMoveFocus={false}```
+property value.
+
+---
+
+## Examples
+
+<Canvas of={ErrorSummaryStories.Default}/>
+
+<Canvas of={ErrorSummaryStories.CustomSummmaryHeading}/>

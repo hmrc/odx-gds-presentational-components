@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default TextInput Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <input
+    className="govuk-input"
+    id="default-input"
+    name="defaultInput"
+  />
+</div>
+`;
+
+exports[`TextInput hint and error text Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <div
+    className="govuk-hint"
+    id="defaultInput-hint"
+  >
+    testHinttext
+  </div>
+  <p
+    className="govuk-error-message"
+    id="defaultInput-error"
+  >
+    <span
+      className="govuk-visually-hidden"
+    >
+      Error:
+    </span>
+    something went wrong
+  </p>
+  <input
+    aria-describedby="defaultInput-hint defaultInput-error"
+    className="govuk-input govuk-input--error"
+    id="default-input"
+    name="defaultInput"
+  />
+</div>
+`;
+
+exports[`Textinputs with classes Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <input
+    className="govuk-input govuk-input--width-4 govuk-input--extra-letter-spacing"
+    id="default-input"
+    name="defaultInput"
+  />
+</div>
+`;
+
+exports[`Textinputs with numeric input mode Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <input
+    className="govuk-input"
+    id="default-input"
+    inputMode="numeric"
+    name="defaultInput"
+  />
+</div>
+`;
+
+exports[`Textinputs with only prefix Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <div
+    className="govuk-input__wrapper"
+  >
+    <div
+      aria-hidden="true"
+      className="govuk-input__prefix"
+    >
+      £
+    </div>
+    <input
+      className="govuk-input"
+      id="default-input"
+      name="defaultInput"
+    />
+  </div>
+</div>
+`;
+
+exports[`Textinputs with only suffix Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <div
+    className="govuk-input__wrapper"
+  >
+    <input
+      className="govuk-input"
+      id="default-input"
+      name="defaultInput"
+    />
+    <div
+      aria-hidden="true"
+      className="govuk-input__suffix"
+    >
+      per item
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Textinputs with prefix and suffix Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <h1
+    className="govuk-label-wrapper"
+  >
+    <label
+      className="govuk-label govuk-label--l"
+      htmlFor="default-input"
+    >
+      Default Text Input
+    </label>
+  </h1>
+  <div
+    className="govuk-input__wrapper"
+  >
+    <div
+      aria-hidden="true"
+      className="govuk-input__prefix"
+    >
+      £
+    </div>
+    <input
+      className="govuk-input"
+      id="default-input"
+      name="defaultInput"
+    />
+    <div
+      aria-hidden="true"
+      className="govuk-input__suffix"
+    >
+      per item
+    </div>
+  </div>
+</div>
+`;

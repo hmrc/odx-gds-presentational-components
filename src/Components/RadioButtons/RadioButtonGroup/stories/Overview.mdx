@@ -1,0 +1,54 @@
+import { Canvas, Meta } from '@storybook/blocks';
+import  * as RadioButtonGroupStories from './RadioButtonGroup.stories';
+import { RadioButtonGroup } from '../RadioButtonGroup'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={RadioButtonGroupStories} />
+
+# Radio Button Group
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/radios/)
+
+The Radio button group component is an implementation of the Gov Design System Radio button group.
+This component is expected to be used for questions for which a user can only select one option from a list.
+
+<ArgsTable of={RadioButtonGroup} />
+
+## Details
+
+The Radio button group **requires** an id property, and a [list of options](/docs/gds-components-radiobutton-radiobutton--overview) and optional text dividers
+The id property will be used as the name for options
+
+An option is made up of required ```value``` and ```label``` properties, with optional ```conditionalContent``` ```hintText``` properties.
+For example ```{value: 'yes', label: 'Yes', hintText: 'Yes hint text'}```
+  The name of each option will be the id of the group, and the id of each option will be generated from the id of the group, and it's order
+
+A divider is defined as an object with a divider property e.g. ```{divider: 'Or'}```
+<Canvas of={RadioButtonGroupStories.Default} />
+
+<Canvas of={RadioButtonGroupStories.DividerExample} />
+
+### onChange handling
+By default, the radio buttons in the group will use a changeHandler that simply checks a radio button when checked.
+For custom change handling, pass an ```onChange``` function to the group, which will be applied as onChange property to All radio buttons.
+To define which radiobutton is currently selected, pass the value of the selected radio button as the ```value``` property of the group
+<Canvas of={RadioButtonGroupStories.ChangeHandlerExample} />
+
+
+## Example with options with conditional content
+<Canvas of={RadioButtonGroupStories.ConditionalQuestions} />
+
+## Example with options with hint text
+<Canvas of={RadioButtonGroupStories.HintText} />
+
+To display radio buttons inline (horizontally) pass the ```inline``` property
+<Canvas of={RadioButtonGroupStories.InlineRadios} />
+
+To display smaller radio buttons pass the ```small``` property
+<Canvas of={RadioButtonGroupStories.SmallRadios} />
+
+
+
+
+**The date input uses the fieldset component, and so any fieldset props can also be passed via the Radio button group**
+[Fieldset documentation](/docs/gds-components-field-set--overview)
+

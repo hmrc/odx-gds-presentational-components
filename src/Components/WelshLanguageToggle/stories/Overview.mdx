@@ -1,0 +1,40 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as WelshLanguageToggleStories from './WelshLanguageToggle.stories';
+import { WelshLanguageToggle } from '../WelshLanguageToggle';
+import { LanguageToggleOption } from '../WelshLanguageToggle.types';
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={WelshLanguageToggleStories} />
+
+# Welsh Language Toggle
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/text-input/)
+
+The Welsh Language Toggle should be used when a service is available in Welsh.
+This component should NOT be used if using the Account Header, as the Account Header already implements a toggle.
+
+
+## Props
+<ArgsTable of={WelshLanguageToggle} />
+
+## Details
+The Welsh Language toggle expects to received the currently selected language (```currentLanguage```) and
+- A config object for the 'Change to English' link (```en```) containing either of, or both of the following:
+  - a href value : ```en.href```
+  - a onClick handler : ```en.handleOnClick```
+
+- A config object for the 'Change to Welsh' link (```cy```) containing either of, or both of the following:
+  - a href value : ```cy.href```
+  - an onClick handler : ```cy.handleOnClick```
+
+
+For whichever ```currentLanguage``` is passed, the 'link' related to that language will be displayed as plain text, and the other language will be rendered as a link.
+
+If a href is provided for the link to toggle to the other language, default anchor tag behaviour will navigate the specified page to show the user translated content.
+<Canvas of={WelshLanguageToggleStories.WithHrefTargets}/>
+
+If an onClick handler is provided for the link to toggle to the other language, this will be called on click of the link. This approach could be used when page content is
+programatically translated, for example.
+If a href is not provided, the links href will default to '#'
+<Canvas of={WelshLanguageToggleStories.WithClickHandlers}/>
+
+<Canvas of={WelshLanguageToggleStories.WelshSelected}/>

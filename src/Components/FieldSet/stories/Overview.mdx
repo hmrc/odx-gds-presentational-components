@@ -1,0 +1,29 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as FieldSetStories from './FieldSet.stories';
+import { FieldSet } from '../FieldSet';
+import { ArgsTable } from '@storybook/addon-docs';
+
+
+<Meta of={FieldSetStories} />
+
+# FieldSet
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/fieldset/)
+
+## Props
+
+<ArgsTable of={FieldSet} />
+
+## Details
+
+Fieldset is used to show relationship between multiple form inputs. E.g. You may need to group a set of related text inputs.
+
+<Canvas of={FieldSetStories.Default} />
+
+The fieldset component handles hint text (```hintText```) and error text (```errorText```), applying appropriate styling, and aria-describedby attributes.
+<Canvas of={FieldSetStories.WithHintAndErrorText} />
+
+If general help text is required, but it is not suitable as hint text, you can provide it as ```legendContent```, which will be rendered as part of the fieldset legend
+<Canvas of={FieldSetStories.LegendWithExtraContent} />
+
+Legend classes can be extended and overidden with the ```legendClassOverrides``` property. For example, you can define medium size legend text with 'govuk-fieldset__legend--m'
+<Canvas of={FieldSetStories.OverridenLegendClass} />

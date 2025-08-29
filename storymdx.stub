@@ -1,0 +1,15 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as ABCStories from './ABC.stories';
+import { ABC } from '../ABC'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={ABCStories} />
+
+# Component name
+
+<ArgsTable of={ABC} />
+
+[[add your documentation here]]
+
+use canvas to embed story examples in documentation
+<Canvas of={ABCStories.storyname}/>

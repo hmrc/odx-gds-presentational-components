@@ -1,0 +1,109 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as TableStories from './Table.stories';
+import { Table } from '../Table'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={TableStories} />
+
+# Table
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/table/)
+
+## Props
+<ArgsTable of={Table} />
+
+
+### TableColumn
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>headText</span></td>
+            <td><span>Required : string : Text content of column header</span></td>
+        </tr>
+        <tr>
+            <td><span>classes</span></td>
+            <td>
+                <span>Optional : string : Class names to apply to column header</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>format</span></td>
+            <td>
+                <span>Optional : string (accepted values - 'numeric') : Format of the data in the column. if 'numeric' - right aligns content </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+### CellData
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>content</span></td>
+            <td><span>Required : string : Content of the cell</span></td>
+        </tr>
+        <tr>
+            <td><span>format</span></td>
+            <td>
+                <span>Optional : string (accepted values - 'numeric') : Format of the data in the cell. if 'numeric' - right aligns content </span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+## Details
+The table component should be used to let users see and compare information in rows and columns.
+
+The table should be comprised of:
+
+**A Caption**: Used to describe the table in the same way a heading would be used.
+-- Set the Caption text with the ```caption``` property
+
+To style the table caption you can pass a class/classes to the ```captionClasses``` property.
+The most common use for this will be to set the caption size using one of the following:
+- govuk-table__caption—s
+- govuk-table__caption—m
+- govuk-table__caption—l
+- govuk-table__caption—xl
+
+**Table headings**: Used to explain what rows or columns represent.<br />
+- **Column headers**: are be provided by the ```columns``` property. This should be an array of objects containing:
+  - headText (required): The text of the column header
+  - classes (optional): Additional classes for the column. This is expected to be used configure column widths - see [Width Override Classes](https://design-system.service.gov.uk/styles/layout/#width-override-classes)
+  - format (optional): Defines the format of the column. Currently this only supports 'numeric' format. If this is set, will right align the content in the respective column.
+
+- **Row headers**: The first element provided for each row (via ```rows``` prop) will be set as the row header
+
+**Table Data**: The information of the table provided via the ```rows``` prop. This should be an 2D array of cell data.
+Cell Data can be defined as
+  - content (required): The value of the cell
+  - format  (optional): Defines the format of the column. Currently this only supports 'numeric' format. If this is set, will right align the content in the respective column.
+e.g
+> [ <br/>
+>  [```{content: 'Row1 Cell1'},{content: 'Row1 Cell2'}```],<br/>
+>  [```{content: 'Row2 Cell1'},{content: 'Row2 Cell2'}```]<br/>
+] <br/>
+
+## Other options
+It is possible to define classes on the table element with ```tableClasses```
+
+
+## Examples
+<Canvas of={TableStories.Default}/>
+
+<Canvas of={TableStories.CaptionStyle}/>
+
+<Canvas of={TableStories.NumericFields}/>
+
+<Canvas of={TableStories.ColumnsClassOverride}/>

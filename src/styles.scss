@@ -1,0 +1,30 @@
+@import "node_modules/govuk-frontend/dist/govuk/all";
+@import "node_modules/hmrc-frontend/hmrc/components/timeout-dialog/_timeout-dialog.scss";
+@import "node_modules/hmrc-frontend/hmrc/components/language-select/_language-select.scss";
+@import "node_modules/hmrc-frontend/hmrc/components/notification-badge/_notification-badge.scss";
+@import "node_modules/hmrc-frontend/hmrc/components/user-research-banner/_user-research-banner.scss";
+
+.gdsreact-modal__close {
+  position: absolute;
+  top: 10%;
+  left: 88%;
+}
+
+.gdsreact-modal__title {
+  padding-right: 30px;
+}
+
+.govuk-summary-list__row:last-child {
+  border-bottom: 0;
+}
+
+@media (min-width: 40.0625em) {
+    @supports (margin: max(calc(0px))) {
+        .hmrc-user-research-banner {
+          .govuk-width-container {
+            margin-right: max(30px, calc(15px + env(safe-area-inset-right)));
+            margin-left: max(30px, calc(15px + env(safe-area-inset-left)));
+          }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+import {Canvas, Meta} from '@storybook/blocks'
+import  * as SummaryListRowStories from './SummaryListRow.stories'
+import { SummaryListRow } from '../SummaryListRow'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={SummaryListRowStories} />
+
+# Component name
+[Gov Design System Documentation (for Summary List, which can be made up of one or more summary List row](https://design-system.service.gov.uk/components/summary-list/)
+
+<ArgsTable of={SummaryListRow} />
+
+
+<Canvas of={SummaryListRowStories.Default}/>

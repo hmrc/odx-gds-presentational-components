@@ -1,0 +1,73 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import  * as DateInputStories from './DateInput.stories';
+import { DateInput } from '../DateInput';
+import { DateFieldData } from '../DateInput.types';
+
+<Meta of={DateInputStories} />
+
+# Date Input
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/date-input/)
+
+## Props
+
+<ArgsTable of={DateInput} />
+
+### Date Field Data
+<p>
+DateFieldData accepts the following properties:
+</p>
+<table class="docblock-argstable">
+    <thead class="docblock-argstable-head">
+        <tr>
+            <th><span>Property</span></th>
+            <th><span>Description</span></th>
+        </tr>
+    </thead>
+    <tbody class="docblock-argstable-body">
+        <tr>
+            <td><span>onChange</span></td>
+            <td><span>Required : ```ChangeEvent<HTMLInputElement>``` : onChange handler for the field</span></td>
+        </tr>
+        <tr>
+            <td><span>hasError</span></td>
+            <td>
+                <span>Optional : boolean : Mark this as true if the field is specific target of an error, otherwise defaults to false</span>
+                <span>Where all fields should be marked with error highlighting, you can either set this property to true for all fields, or leave it out for all</span>
+            </td>
+        </tr>
+        <tr>
+            <td><span>label</span></td>
+            <td><span>Optional : string : Overrides the label of the individual input (these default to 'Day', 'Month' and 'Year' respectively)</span></td>
+        </tr>
+        <tr>
+            <td><span>value</span></td>
+            <td><span>Optional : string : Sets the value of the individual input</span></td>
+        </tr>
+    </tbody>
+</table>
+
+## Details
+
+The Date input will  accept autocomplete property, assigning relevant autocomplete value to each field
+(e.g. passing bday will assign relevant suffix for each field, bday-day, bday-month, bday-year)
+<Canvas of={DateInputStories.Autocomplete}/>
+
+Each field can be passed it's own changeHandler in the field data (e.g. ```dayField={onChange:()=>{}```)
+The value of each individual field is passed with it's field data (e.g. ```dayField={value:01}```)
+<Canvas of={DateInputStories.WithDefaultValue}/>
+
+Each individual field name can be overriden, to enable translation for example (e.g. ```dayField={label:'Ddyd'}```)
+<Canvas of={DateInputStories.OverridenFieldNames}/>
+
+By default, an error will cause all inputs to be highlighted:
+<Canvas of={DateInputStories.GeneralError}/>
+If the error only targets a specific field(s) that can be configured with field data (e.g. ```monthField={hasError=true}```)
+<Canvas of={DateInputStories.FieldSpecificError}/>
+
+
+**The date input uses the fieldset component, and so any fieldset props can also be passed via the Date Inuput**
+[Fieldset documentation](/docs/gds-components-field-set--overview)
+
+
+<Canvas of={DateInputStories.Default}/>

@@ -1,0 +1,49 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as LinkStories from './Link.stories';
+import { Link } from '../Link'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={LinkStories} />
+
+# Styled Link
+[Gov Design System Documentation](https://design-system.service.gov.uk/styles/links/)
+
+This component provides a GDS Styled Link (anchor element).
+
+
+## Props
+
+<ArgsTable of={Link} />
+```And extends AnchorHTMLAttributes<HTMLAnchorElement>, exposing all default <a> tag properties```
+
+## Details
+
+By default, the Link component should be configured as any standard anchor element. This will usually be with simply a href and text content.
+<Canvas of={LinkStories.Default}/>
+
+Links can then be further styled when required:
+
+### Links without a visited state
+When it is not helpful to distinguish between visited and unvisited states, set link to not show rendered state
+- property: showVisitedState (defaults to True)
+When false, applies relevant styling to not change link display based on visited status.
+<Canvas of={LinkStories.WithoutVisitedState}/>
+
+### Inverted Colour (Links on dark background)
+If rendering the link on a dark background, to maintain accesibility, link can be set to render in white, to maintain colour contrast.
+- property: invertColour
+When true, applies relevant styling to render link with white text.
+<Canvas of={LinkStories.InvertedColour}/>
+
+### Links without underlines
+Links can be rendered without an underlines
+- property: noUnderline
+When true, applies relevant styling to render link without underline
+<Canvas of={LinkStories.WithoutUnderline}/>
+
+### Opening links in a new tab
+If you must set links to open in a new tab, the opensInNewTab property will automatically apply the suggested attributes (```rel``` and ```target```) to reduce the risk of reverse tabnabbing
+- property: opensInNewTab
+When true, applies ```rel="noreferrer noopener"``` and ```target="_blank"``` attributes to the link.
+<Canvas of={LinkStories.OpensInNewTab}/>
+

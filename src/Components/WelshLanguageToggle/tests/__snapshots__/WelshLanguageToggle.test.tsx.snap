@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Welsh Language Toggle with both href and onClickHandlers configured, and English currently selected Snapshot 1`] = `
+<nav
+  aria-label="Language switcher"
+  className="hmrc-language-select"
+>
+  <ul
+    className="hmrc-language-select__list"
+  >
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <span
+        aria-current="true"
+      >
+        English
+      </span>
+    </li>
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <a
+        className="govuk-link"
+        href="#"
+        hrefLang="cy"
+        lang="cy"
+        onClick={[Function]}
+        rel="alternate"
+      >
+        <span
+          className="govuk-visually-hidden"
+        >
+          Newid yr iaith ir Gymraeg
+        </span>
+        <span
+          aria-hidden="true"
+        >
+          Cymraeg
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Welsh Language Toggle with both href and onClickHandlers configured, and Welsh currently selected Snapshot 1`] = `
+<nav
+  aria-label="Switcher iaith"
+  className="hmrc-language-select"
+>
+  <ul
+    className="hmrc-language-select__list"
+  >
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <a
+        className="govuk-link"
+        href="?en"
+        hrefLang="en"
+        lang="en"
+        onClick={[Function]}
+        rel="alternate"
+      >
+        <span
+          className="govuk-visually-hidden"
+        >
+          Change the language to English
+        </span>
+        <span
+          aria-hidden="true"
+        >
+          English
+        </span>
+      </a>
+    </li>
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <span
+        aria-current="true"
+      >
+        Cymraeg
+      </span>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Welsh Language Toggle with just hrefs configured, and English currently selected Snapshot 1`] = `
+<nav
+  aria-label="Language switcher"
+  className="hmrc-language-select"
+>
+  <ul
+    className="hmrc-language-select__list"
+  >
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <span
+        aria-current="true"
+      >
+        English
+      </span>
+    </li>
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <a
+        className="govuk-link"
+        href="?cy"
+        hrefLang="cy"
+        lang="cy"
+        rel="alternate"
+      >
+        <span
+          className="govuk-visually-hidden"
+        >
+          Newid yr iaith ir Gymraeg
+        </span>
+        <span
+          aria-hidden="true"
+        >
+          Cymraeg
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Welsh Language Toggle with just hrefs configured, and Welsh currently selected Snapshot 1`] = `
+<nav
+  aria-label="Switcher iaith"
+  className="hmrc-language-select"
+>
+  <ul
+    className="hmrc-language-select__list"
+  >
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <a
+        className="govuk-link"
+        href="?en"
+        hrefLang="en"
+        lang="en"
+        rel="alternate"
+      >
+        <span
+          className="govuk-visually-hidden"
+        >
+          Change the language to English
+        </span>
+        <span
+          aria-hidden="true"
+        >
+          English
+        </span>
+      </a>
+    </li>
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <span
+        aria-current="true"
+      >
+        Cymraeg
+      </span>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Welsh Language Toggle with just onClickHandlers configured, and English currently selected Snapshot 1`] = `
+<nav
+  aria-label="Language switcher"
+  className="hmrc-language-select"
+>
+  <ul
+    className="hmrc-language-select__list"
+  >
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <span
+        aria-current="true"
+      >
+        English
+      </span>
+    </li>
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <a
+        className="govuk-link"
+        href="#"
+        hrefLang="cy"
+        lang="cy"
+        onClick={[Function]}
+        rel="alternate"
+      >
+        <span
+          className="govuk-visually-hidden"
+        >
+          Newid yr iaith ir Gymraeg
+        </span>
+        <span
+          aria-hidden="true"
+        >
+          Cymraeg
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Welsh Language Toggle with just onClickHandlers configured, and Welsh currently selected Snapshot 1`] = `
+<nav
+  aria-label="Switcher iaith"
+  className="hmrc-language-select"
+>
+  <ul
+    className="hmrc-language-select__list"
+  >
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <a
+        className="govuk-link"
+        href="#"
+        hrefLang="en"
+        lang="en"
+        onClick={[Function]}
+        rel="alternate"
+      >
+        <span
+          className="govuk-visually-hidden"
+        >
+          Change the language to English
+        </span>
+        <span
+          aria-hidden="true"
+        >
+          English
+        </span>
+      </a>
+    </li>
+    <li
+      className="hmrc-language-select__list-item"
+    >
+      <span
+        aria-current="true"
+      >
+        Cymraeg
+      </span>
+    </li>
+  </ul>
+</nav>
+`;

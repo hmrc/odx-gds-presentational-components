@@ -1,0 +1,592 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date with Autocomplete Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Date of Birth
+      </h1>
+    </legend>
+    <div
+      className="govuk-date-input"
+      id="DateOfBirth"
+    >
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-day"
+          >
+            Day
+          </label>
+          <input
+            autoComplete="bday-day"
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-day"
+            inputMode="numeric"
+            name="DateOfBirth-day"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-month"
+          >
+            Month
+          </label>
+          <input
+            autoComplete="bday-month"
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-month"
+            inputMode="numeric"
+            name="DateOfBirth-month"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-year"
+          >
+            Year
+          </label>
+          <input
+            autoComplete="bday-year"
+            className="govuk-input govuk-input--width-4"
+            id="DateOfBirth-year"
+            inputMode="numeric"
+            name="DateOfBirth-year"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Date with error specific to single field Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <fieldset
+    aria-describedby="DateOfBirth-error"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Date of Birth
+      </h1>
+    </legend>
+    <p
+      className="govuk-error-message"
+      id="DateOfBirth-error"
+    >
+      <span
+        className="govuk-visually-hidden"
+      >
+        Error:
+      </span>
+      Month cannot be emtpy
+    </p>
+    <div
+      className="govuk-date-input"
+      id="DateOfBirth"
+    >
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-day"
+          >
+            Day
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-day"
+            inputMode="numeric"
+            name="DateOfBirth-day"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-month"
+          >
+            Month
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2 govuk-input--error"
+            id="DateOfBirth-month"
+            inputMode="numeric"
+            name="DateOfBirth-month"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-year"
+          >
+            Year
+          </label>
+          <input
+            className="govuk-input govuk-input--width-4"
+            id="DateOfBirth-year"
+            inputMode="numeric"
+            name="DateOfBirth-year"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Date with general error Snapshot 1`] = `
+<div
+  className="govuk-form-group govuk-form-group--error"
+>
+  <fieldset
+    aria-describedby="DateOfBirth-error"
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Date of Birth
+      </h1>
+    </legend>
+    <p
+      className="govuk-error-message"
+      id="DateOfBirth-error"
+    >
+      <span
+        className="govuk-visually-hidden"
+      >
+        Error:
+      </span>
+      Date must be in the future
+    </p>
+    <div
+      className="govuk-date-input"
+      id="DateOfBirth"
+    >
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-day"
+          >
+            Day
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2 govuk-input--error"
+            id="DateOfBirth-day"
+            inputMode="numeric"
+            name="DateOfBirth-day"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-month"
+          >
+            Month
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2 govuk-input--error"
+            id="DateOfBirth-month"
+            inputMode="numeric"
+            name="DateOfBirth-month"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-year"
+          >
+            Year
+          </label>
+          <input
+            className="govuk-input govuk-input--width-4 govuk-input--error"
+            id="DateOfBirth-year"
+            inputMode="numeric"
+            name="DateOfBirth-year"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Date with overriden field labels Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Date of Birth
+      </h1>
+    </legend>
+    <div
+      className="govuk-date-input"
+      id="DateOfBirth"
+    >
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-day"
+          >
+            Yad
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-day"
+            inputMode="numeric"
+            name="DateOfBirth-day"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-month"
+          >
+            Thnom
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-month"
+            inputMode="numeric"
+            name="DateOfBirth-month"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-year"
+          >
+            Raey
+          </label>
+          <input
+            className="govuk-input govuk-input--width-4"
+            id="DateOfBirth-year"
+            inputMode="numeric"
+            name="DateOfBirth-year"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Date with value Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Date of Birth
+      </h1>
+    </legend>
+    <div
+      className="govuk-date-input"
+      id="DateOfBirth"
+    >
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-day"
+          >
+            Day
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-day"
+            inputMode="numeric"
+            name="DateOfBirth-day"
+            onChange={[MockFunction]}
+            type="text"
+            value="10"
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-month"
+          >
+            Month
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-month"
+            inputMode="numeric"
+            name="DateOfBirth-month"
+            onChange={[MockFunction]}
+            type="text"
+            value="3"
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-year"
+          >
+            Year
+          </label>
+          <input
+            className="govuk-input govuk-input--width-4"
+            id="DateOfBirth-year"
+            inputMode="numeric"
+            name="DateOfBirth-year"
+            onChange={[MockFunction]}
+            type="text"
+            value="2020"
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Default Date Component Snapshot 1`] = `
+<div
+  className="govuk-form-group"
+>
+  <fieldset
+    className="govuk-fieldset"
+  >
+    <legend
+      className="govuk-fieldset__legend govuk-fieldset__legend--l"
+    >
+      <h1
+        className="govuk-fieldset__heading"
+      >
+        Date of Birth
+      </h1>
+    </legend>
+    <div
+      className="govuk-date-input"
+      id="DateOfBirth"
+    >
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-day"
+          >
+            Day
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-day"
+            inputMode="numeric"
+            name="DateOfBirth-day"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-month"
+          >
+            Month
+          </label>
+          <input
+            className="govuk-input govuk-input--width-2"
+            id="DateOfBirth-month"
+            inputMode="numeric"
+            name="DateOfBirth-month"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="govuk-date-input__item"
+      >
+        <div
+          className="govuk-form-group"
+        >
+          <label
+            className="govuk-label  govuk-date-input__label"
+            htmlFor="DateOfBirth-year"
+          >
+            Year
+          </label>
+          <input
+            className="govuk-input govuk-input--width-4"
+            id="DateOfBirth-year"
+            inputMode="numeric"
+            name="DateOfBirth-year"
+            onChange={[MockFunction]}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+    </div>
+  </fieldset>
+</div>
+`;

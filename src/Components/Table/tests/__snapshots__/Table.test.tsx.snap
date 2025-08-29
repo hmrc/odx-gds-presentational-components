@@ -1,0 +1,231 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Table Snapshot 1`] = `
+<table
+  className="govuk-table"
+>
+  <caption
+    className="govuk-table__caption"
+  >
+    Table Caption
+  </caption>
+  <thead
+    className="govuk-table__head"
+  >
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__header"
+        scope="col"
+      >
+        Abc
+      </th>
+      <th
+        className="govuk-table__header"
+        scope="col"
+      >
+        Def
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="govuk-table__body"
+  >
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__cell"
+        scope="row"
+      >
+        c1,r1
+      </th>
+      <td
+        className="govuk-table__cell"
+      >
+        c2,r1
+      </td>
+    </tr>
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__cell"
+        scope="row"
+      >
+        c1,r2
+      </th>
+      <td
+        className="govuk-table__cell"
+      >
+        c2,r2
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table with numeric formatted cells Snapshot 1`] = `
+<table
+  className="govuk-table"
+>
+  <caption
+    className="govuk-table__caption"
+  >
+    Table Caption
+  </caption>
+  <thead
+    className="govuk-table__head"
+  >
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__header"
+        scope="col"
+      >
+        Column 1
+      </th>
+      <th
+        className="govuk-table__header extra-class"
+        scope="col"
+      >
+        Column 2
+      </th>
+      <th
+        className="govuk-table__header govuk-table__header--numeric"
+        scope="col"
+      >
+        Numeric column
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="govuk-table__body"
+  >
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__cell"
+        scope="row"
+      >
+        c1,r1
+      </th>
+      <td
+        className="govuk-table__cell"
+      >
+        c2,r1
+      </td>
+      <td
+        className="govuk-table__cell govuk-table__cell--numeric"
+      >
+        c3,r1
+      </td>
+    </tr>
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__cell"
+        scope="row"
+      >
+        c1,r2
+      </th>
+      <td
+        className="govuk-table__cell"
+      >
+        c2,r2
+      </td>
+      <td
+        className="govuk-table__cell govuk-table__cell--numeric"
+      >
+        c3,r1
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Table with table class overrides Snapshot 1`] = `
+<table
+  className="govuk-table govuk-table--small-text-until-tablet"
+>
+  <caption
+    className="govuk-table__caption"
+  >
+    Table Caption
+  </caption>
+  <thead
+    className="govuk-table__head"
+  >
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__header"
+        scope="col"
+      >
+        Column 1
+      </th>
+      <th
+        className="govuk-table__header extra-class"
+        scope="col"
+      >
+        Column 2
+      </th>
+      <th
+        className="govuk-table__header govuk-table__header--numeric"
+        scope="col"
+      >
+        Numeric column
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="govuk-table__body"
+  >
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__cell"
+        scope="row"
+      >
+        c1,r1
+      </th>
+      <td
+        className="govuk-table__cell"
+      >
+        c2,r1
+      </td>
+      <td
+        className="govuk-table__cell govuk-table__cell--numeric"
+      >
+        c3,r1
+      </td>
+    </tr>
+    <tr
+      className="govuk-table__row"
+    >
+      <th
+        className="govuk-table__cell"
+        scope="row"
+      >
+        c1,r2
+      </th>
+      <td
+        className="govuk-table__cell"
+      >
+        c2,r2
+      </td>
+      <td
+        className="govuk-table__cell govuk-table__cell--numeric"
+      >
+        c3,r1
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;

@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Error summary with multple errors Snapshot 1`] = `
+<div
+  className="govuk-error-summary"
+  data-module="govuk-error-summary"
+  tabIndex={-1}
+>
+  <div
+    role="alert"
+  >
+    <h2
+      className="govuk-error-summary__title"
+    >
+      There is a problem
+    </h2>
+    <div
+      className="govuk-error-summary__body"
+    >
+      <ul
+        className="govuk-list govuk-error-summary__list"
+      >
+        <li>
+          <a
+            href="#fieldA"
+            onClick={[Function]}
+          >
+            An error message
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fieldB"
+            onClick={[Function]}
+          >
+            Date should be in future
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fieldC"
+            onClick={[Function]}
+          >
+            Value should match pattern X1 X1
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Default Error summary with one error Snapshot 1`] = `
+<div
+  className="govuk-error-summary"
+  data-module="govuk-error-summary"
+  tabIndex={-1}
+>
+  <div
+    role="alert"
+  >
+    <h2
+      className="govuk-error-summary__title"
+    >
+      There is a problem
+    </h2>
+    <div
+      className="govuk-error-summary__body"
+    >
+      <ul
+        className="govuk-list govuk-error-summary__list"
+      >
+        <li>
+          <a
+            href="#fieldA"
+            onClick={[Function]}
+          >
+            An error message
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Error summary with custom heading Snapshot 1`] = `
+<div
+  className="govuk-error-summary"
+  data-module="govuk-error-summary"
+  tabIndex={-1}
+>
+  <div
+    role="alert"
+  >
+    <h2
+      className="govuk-error-summary__title"
+    >
+      Custom Heading
+    </h2>
+    <div
+      className="govuk-error-summary__body"
+    >
+      <ul
+        className="govuk-list govuk-error-summary__list"
+      >
+        <li>
+          <a
+            href="#fieldA"
+            onClick={[Function]}
+          >
+            An error message
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fieldB"
+            onClick={[Function]}
+          >
+            Date should be in future
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fieldC"
+            onClick={[Function]}
+          >
+            Value should match pattern X1 X1
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ErrorSummary with autoMoveFocus set to false Snapshot 1`] = `
+<div
+  className="govuk-error-summary"
+  data-module="govuk-error-summary"
+  tabIndex={-1}
+>
+  <div
+    role="alert"
+  >
+    <h2
+      className="govuk-error-summary__title"
+    >
+      There is a problem
+    </h2>
+    <div
+      className="govuk-error-summary__body"
+    >
+      <ul
+        className="govuk-list govuk-error-summary__list"
+      >
+        <li>
+          <a
+            href="#fieldA"
+            onClick={[Function]}
+          >
+            An error message
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fieldB"
+            onClick={[Function]}
+          >
+            Date should be in future
+          </a>
+        </li>
+        <li>
+          <a
+            href="#fieldC"
+            onClick={[Function]}
+          >
+            Value should match pattern X1 X1
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ErrorSummary with empty error details list passed Snapshot 1`] = `
+<div
+  className="govuk-error-summary"
+  data-module="govuk-error-summary"
+  tabIndex={-1}
+>
+  <div
+    role="alert"
+  >
+    <h2
+      className="govuk-error-summary__title"
+    >
+      There is a problem
+    </h2>
+    <div
+      className="govuk-error-summary__body"
+    >
+      <ul
+        className="govuk-list govuk-error-summary__list"
+      />
+    </div>
+  </div>
+</div>
+`;

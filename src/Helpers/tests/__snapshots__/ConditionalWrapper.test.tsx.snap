@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`True condition, conditional wrapper Snapshot 1`] = `null`;
+
+exports[`True condition, conditional wrapper Snapshot 2`] = `
+<div
+  data-testid="test-child"
+/>
+`;

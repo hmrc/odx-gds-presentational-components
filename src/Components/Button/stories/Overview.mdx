@@ -1,0 +1,58 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import * as ButtonStories from './Button.stories';
+import * as ButtonVariantStories from './Button.variants.stories.tsx'
+import { Button } from '../Button';
+import { ButtonProps, ButtonVariant } from '../Button.types';
+
+<Meta of={ButtonStories} />
+
+# Button
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/button/)
+
+## Props
+
+<ArgsTable of={Button} />
+
+## Details
+
+### Usage
+
+A default button implementation requires the providing of:
+- ```text``` property - Defining the text shown in on the button
+- ```onClick``` property - the click handler for the button
+
+The default style of the button is the Primary Action style:
+<Canvas of={ButtonStories.Default}/>
+
+### Variation
+For different variants of the button, use the
+```variant``` property, which expects a value from the ButtonVariant enumerator
+The available variants are:
+
+<u><b>ButtonVariant.Primary</b></u> - (This is the same as providing no variant. Use this if you want to explicitly make the button Primary)
+Should be used as the main call to action. Avoid using more than one Primary buttons per page.
+<Canvas of={ButtonVariantStories.Primary}/>
+
+<u><b>ButtonVariant.Secondary</b></u> -
+Should bne used for secondary calls to action.
+<Canvas of={ButtonVariantStories.Secondary}/>
+
+<u><b>ButtonVariant.Warning</b></u> -
+Should be used to communicate to a user to think carefully before using the button. Use sparingly, if at all.
+<Canvas of={ButtonVariantStories.Warning}/>
+
+<u><b>ButtonVariant.Inverse</b></u> -
+Renders white button, used to ensure buttons have better contrast against dark backgrounds.
+(The white button and background colour must have a contrast ratio of at least 4.5:1 to meet WCAG guidelines)
+<Canvas of={ButtonVariantStories.DarkBackground}/>
+
+<u><b>Start Now Button</b></u> -
+As start now buttons are rendered as a link styled as a button, they are built as their own component.
+See: [Start Now Link](gds-components-startnowlink--overview)
+
+
+### Disabled
+It is not adivse to use disabled buttons unless absolutely required, however, if it is required, use the
+- ```disabled``` property
+<Canvas of={ButtonStories.Disabled}/>

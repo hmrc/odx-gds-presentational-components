@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Default Link Snapshot Snapshot 1`] = `
+<a
+  className="govuk-link"
+  href="#"
+>
+  HTML Example
+</a>
+`;
+
+exports[`Default Snapshot Snapshot 1`] = `
+<a
+  className="govuk-link"
+  href="#"
+>
+  HTML Example
+</a>
+`;
+
+exports[`Inverted Colour Link Snapshot Snapshot 1`] = `
+<a
+  className="govuk-link govuk-link--inverse"
+  href="#"
+  invertColour={true}
+>
+  HTML Example
+</a>
+`;
+
+exports[`Link with no underline Snapshot Snapshot 1`] = `
+<a
+  className="govuk-link govuk-link--no-underline"
+  href="#"
+  noUnderline={true}
+>
+  HTML Example
+</a>
+`;
+
+exports[`Opens in New Tab Link Snapshot Snapshot 1`] = `
+<a
+  className="govuk-link"
+  href="#"
+  opensInNewTab={true}
+  rel="noreferrer noopener"
+  target="_blank"
+>
+  HTML Example
+</a>
+`;

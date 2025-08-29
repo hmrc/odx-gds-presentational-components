@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification Banner with count between 0 and 100 Snapshot 1`] = `
+<span
+  className="hmrc-notification-badge"
+>
+  57
+</span>
+`;
+
+exports[`Notification Banner with count greater than 99 Snapshot 1`] = `
+<span
+  className="hmrc-notification-badge"
+>
+  99+
+</span>
+`;
+
+exports[`Notification Banner with count of 0 Snapshot 1`] = `null`;
