@@ -23,7 +23,7 @@
     "src/**/*",
   ],
   "exclude": [
-    "StillToBuild",
+    "StillToBuild", // TODO: TIDY UP HERE
     "styles.scss",
     "node_modules",
     "webpack.config.js",

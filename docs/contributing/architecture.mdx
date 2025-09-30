@@ -1,0 +1,28 @@
+# Application architecture
+
+The HMRC GDS React Components library is library is evolving, and while its structure may change, a consistent enough pattern has emerged to guide file organisation.
+
+Component files follow the below structure:
+
+```console
+    src
+    └── Components
+        └── ComponentName
+            ├── stories
+            │   ├── Overview.mdx
+            │   └── ComponentName.stories.tsx
+            ├── tests
+            │   ├── __snapshots__
+            │   │   └── ComponentName.test.tsx.snap
+            │   └── ComponentName.test.tsx
+            ├── ComponentName.tsx
+            ├── ComponentName.types.ts
+            └── index.ts
+```
+
+    - **stories/**: Contains storybook documentation and stories for the component.
+    - **tests/**: Contains unit tests for the component.
+    - **__snapshots__**: Contains markup for the rendered component. Note that these are automatically generated when running the tests for a component.
+    - **ComponentName.tsx**: The main React component file.
+    - **ComponentName.types.ts**: Types and interfaces used by the component.
+    - **index.ts**: Exports the component for easy importing elsewhere.

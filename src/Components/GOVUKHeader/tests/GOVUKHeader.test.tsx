@@ -46,9 +46,9 @@ describe('Feature: Govuk header', () => {
 
     it('Should render the standard SVG logo', () => {
       const header = render(<Header serviceHome='#' />)
-      const svg = header.container.querySelector('svg');
-      expect(svg).toBeInTheDocument();
-      expect(svg?.getAttribute('viewBox')).toBe('0 0 148 30');
+      const svg = header.container.querySelector('svg')
+      expect(svg).toBeInTheDocument()
+      expect(svg?.getAttribute('viewBox')).toBe('0 0 148 30')
     })
 
     it('Should set href of anchor to be same as the serviceHome prop', () => {
@@ -70,7 +70,7 @@ describe('Feature: Govuk header', () => {
 
   describe('When I am using the GOVUK header component with brandRefresh', () => {
     it('Should render the updated SVG logo', () => {
-      const header = render(<Header serviceHome='#' brandRefresh={true} />)
+      const header = render(<Header serviceHome='#' brandRefresh />)
       const svg = header.container.querySelector('svg')
       expect(svg).toBeInTheDocument()
       expect(svg?.getAttribute('viewBox')).toBe('0 0 324 60')

@@ -8,3 +8,5 @@ coverage
 types
 package-lock.json
 test-results/
+.gitlab-ci.yml
+deployment-config.json

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackLink with onClick Snapshot Snapshot 1`] = `
+<a
+  className="govuk-back-link"
+  href="https://gov.uk/"
+  onClick={[Function]}
+>
+  Back
+</a>
+`;
+
+exports[`Default BackLink Snapshot Snapshot 1`] = `
+<a
+  className="govuk-back-link"
+  href="https://gov.uk/"
+>
+  Back
+</a>
+`;
+
+exports[`Inverse BackLink Snapshot Snapshot 1`] = `
+<a
+  className="govuk-back-link govuk-back-link--inverse"
+  href="https://gov.uk/"
+>
+  Back
+</a>
+`;

@@ -1,0 +1,49 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import * as BackLinkStories from './BackLink.stories';
+import {BackLink} from '../BackLink';
+
+<Meta of={BackLinkStories} />
+
+# BackLink Component Overview
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/back-link/)
+
+## Purpose
+
+The `BackLink` component provides a styled link for navigation, typically used to return to a previous page. It wraps the reusable `Link` component and applies GOV.UK-specific styling.
+
+## Props 
+
+<ArgsTable of={BackLink} />
+
+## Behaviour
+
+- `text` (required): The text to display in the back link
+- `href` (optional): The URL to navigate to. Defaults to "#" if not provided. Accepts both string URLs and URL objects
+- `inverse` (optional): When set to `true`, applies `govuk-back-link--inverse` class for white text on dark backgrounds
+- `handleBackLink` (optional): Custom click handler for the back link
+
+## Examples
+
+### Default BackLink
+Default back link with basic styling:
+
+<Canvas of={BackLinkStories.Default} />
+
+### Inverse BackLink
+For use on dark backgrounds:
+
+<Canvas of={BackLinkStories.Inverse} />
+
+### With URL Object
+Using a URL object instead of a string:
+
+<Canvas of={BackLinkStories.WithURLObject} />
+
+### With Click Handler
+Custom click handling:
+
+<Canvas of={BackLinkStories.WithClickHandler} />
+
+
+

@@ -1,0 +1,55 @@
+# Opening a PR
+
+Once you have ensured that all expected processes have been followed and your code is in a fit state to be reviewed, you may raise a PR.
+Any PR that is raised will be reviewed on a case by case basis by the core developer team, until a regular pattern establishes itself to the point where a dedicated team may be established.
+
+External and internal PRs will be subject to the same standards and approval process. Approval must be granted by two developers, in addition to one junior architect and one senior architect.
+
+
+## PR submission checklist
+
+Before submitting a contribution to DXAPI HMRC React Components, please make sure that you have checked the following:
+    - Verify that your changes comply with [GDS Standards](https://design-system.service.gov.uk/)
+    - Run the linting command to fix any formatting issues
+    - Confirm that the behaviour and/or appearance of changes is as expected
+    - Add new test cases where necessary
+    - Update existing test cases if applicable
+    - Run the full test suite to ensure no regressions
+    - Verify that all naming conventions have been followed
+    - Verify that new folders/files follow the guidance given in the [architecture documentation](/architecture.mdx)
+
+
+## Branch conventions
+
+There are 4 types of branch:
+    - feature branch
+    - story branch
+    - bug branch
+    - tech debt
+
+When you open a PR, the branch name should be made up of:
+    - branch type, in uppercase
+    - ticket number or the number of the GitHub issue
+    - brief description of the PR's goal, in lowercase
+    - - emdash between each word, underscores will not be accepted
+
+For example: FEATURE-01-new-table-component, BUG-31-fix-broken-function.
+
+
+## Formatting your PR
+
+The purpose of your PR should be as clear as possible. Include the ticket or issue number in the title along with a brief overview of the goal. In the description, include a link to the original ticket where possible or a link to the GitHub issue, along with an overview of the changes made and screenshots where this is applicable.
+
+
+## Addressing PR comments
+
+Comments from the team will fall under 4 categories:
+
+    - **[T] Thought**: there is no need for interaction. Perhaps there has been a learning opportunity or something has been done particularly well and the commenter
+    wishes to acknowledge it.
+    - **[Q] Question**: the PR author must respond.
+    - **[S] Suggestion**: this is strong encouragement for a change to be made. The author has the right to decline the suggestion, but they must be able to provide
+    valid reasoning and there must be an agreement from within the team.
+    - **[R] Request**: this is a change request. The PR will be blocked until the request is addressed.
+
+At any point, the team may reach out to the PR author with questions, to get further context on a chosen approach or design, where it is viewed appropriate.

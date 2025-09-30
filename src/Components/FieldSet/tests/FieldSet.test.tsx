@@ -60,13 +60,13 @@ it('Legend is not set as page heading, is legendIsHeading is false', () => {
 })
 
 it('Renders hint text, if provided, with hint class and hint id based on formgroup name', () => {
-  const customHint = <div id={`${testFieldsetName}-hint`} className="govuk-hint" data-testid="custom-hint">Custom hint</div>
-   const { getByTestId, getByRole } = render(
+  const customHint = <div id={`${testFieldsetName}-hint`} className='govuk-hint' data-testid='custom-hint'>Custom hint</div>
+  const { getByTestId, getByRole } = render(
     <FieldSet label={testFieldsetLabel} name={testFieldsetName} hintText={customHint}>
       {testInnerInput}
     </FieldSet>
   )
- const hintElement = getByTestId('custom-hint')
+  const hintElement = getByTestId('custom-hint')
   expect(hintElement).toHaveClass('govuk-hint')
   expect(hintElement).toHaveAttribute('id', `${testFieldsetName}-hint`)
   expect(getByRole('group')).toHaveAttribute('aria-describedby', `${testFieldsetName}-hint`)

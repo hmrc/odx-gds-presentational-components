@@ -1,0 +1,23 @@
+import {Canvas, Meta, Source} from '@storybook/blocks';
+import { ArgsTable } from '@storybook/addon-docs';
+import  * as InsetTextStories from './InsetText.stories';
+import { InsetText } from '../InsetText';
+
+<Meta of={InsetTextStories} />
+
+# Inset Text
+[Gov Design System Documentation](https://design-system.service.gov.uk/components/inset-text/)
+
+## Props
+
+<ArgsTable of={InsetText} />
+
+## Details
+
+The Inset Text component to differentiate a block of text from the content that surrounds it, for example:
+- quotes
+- examples
+- additional information about the page
+
+The 'children' prop is a react node that will be displayed inside the component.
+<Canvas of={InsetTextStories.Default} />

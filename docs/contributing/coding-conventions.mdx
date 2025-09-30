@@ -1,0 +1,101 @@
+# Conventions to follow
+
+Internal and external contributors are expected to follow the same standards and processes in their work. If a PR does not comply with these standards then the team reserve the right to reject the work.
+
+
+### Style guide
+
+This library uses TypeScript. Strict type annotations must be followed at all times. `any` is not permitted unless it is absolutely unavoidable. Instances of `// ts-ignore` are not permitted.
+
+Use `.ts` in the following cases:
+
+    - Defining a class
+    - Utility or helper functions
+    - Type definitions or interfaces
+
+Use `.tsx` for code that contains JSX syntax, such as components.
+
+
+### Naming conventions
+
+Folders and files should be named after the component or feature that is being developed. Test files must include `.test` before the file extension.
+
+File names follow pascal case eg. ComponentName. Variables should follow camel case eg. componentVariable.
+
+For information on branch names, see guidance on [opening a PR](/opening-a-pr.mdx).
+
+
+### Component structure
+
+This library is an evolving piece of work. We have established patterns in a manner consistent enough to offer guidance on rough expectations for new work and how it should be structured, but the team does note that this may be subject to change.
+
+Use functional components and ensure that all work is accessible and follows GDS standards.
+
+Components follow the below structure:
+
+```tsx
+import ComponentNameProps from './ComponentNameProps.types'
+
+const ComponentName: FC<ComponentNameProps> = (props: ComponentNameProps) => {
+  const { propName1, propName2 } = props
+
+  return (
+    <ComponentNameCode />
+  )
+}
+
+export default ComponentName
+```
+
+Use a `.types` file to define any interfaces related to the component. Components should be exposed via `index.ts` for end users to consume.
+
+
+### Formatting & Linting
+
+HMRC GDS React Components is following ts-standard in its linting conventions, as are set out in [GDS Way](https://gds-way.digital.cabinet-office.gov.uk/manuals/programming-languages/js.html#eslint) along with [ESLint](https://eslint.org). You can run the linter with `npm run lint` to detect any issues. Use `npm run lint:fix` to apply any automatic fixes. These checks should be carried out prior to opening a pull request.
+
+
+### Storybook documentation
+
+This library uses [Storybook](https://storybook.js.org/docs) to capture the rendered state of a component. This allows developers to view their work during the process without having to plug a component into a consuming application.
+
+The `Overview.mdx` file provides implementation details for a component. This should be as detailed as possible, to act as a step-by-step guide for consumers. Include details on any required arguments and explanation for any required fields.
+
+```tsx
+    import {Canvas, Meta} from '@storybook/blocks';
+    import  * as ABCStories from './ABC.stories';
+    import { ABC } from '../ABC'
+    import { ArgsTable } from '@storybook/addon-docs';
+
+    <Meta of={ABCStories} />
+
+    # Component name
+
+    <ArgsTable of={ABC} />
+
+    [[add your documentation here]]
+
+    use canvas to embed story examples in documentation
+    <Canvas of={ABCStories.storyname}/>
+```
+
+A story describes a component state, and there may be multiple states for one component. All states should be covered.
+
+```tsx
+    import React from 'react';
+    import type { Meta, StoryObj } from '@storybook/react';
+    import {X} from '../X';
+
+    const meta: Meta<typeof X> = {
+        title: 'GDS Components/X',
+        component: X,
+    }
+
+    export default meta;
+
+    export const Default: StoryObj<typeof X> = {
+        componentArgs: arg
+    }
+```
+
+If you have made any changes such as changes in behaviour, component props, or added a new component, please ensure that these are reflected in Storybook documentation. Any PRs that fail to include necessary changes will be rejected until these are added.

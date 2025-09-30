@@ -7,7 +7,7 @@ describe('ResearchBanner component', () => {
   const requiredProps = {
     header: 'Help make GOV.UK better',
     signupLink: 'https://example.com',
-    signupText: 'Sign up to take part in research (opens in new tab)',
+    signupText: 'Sign up to take part in research (opens in new tab)'
   }
 
   it('should render the banner with header and signup link', () => {
@@ -15,8 +15,8 @@ describe('ResearchBanner component', () => {
       <ResearchBanner
         {...requiredProps}
         hideButton={false}
-        hideButtonText="Hide message"
-        hideButtonAriaText="Hide message. I do not want to take part in research"
+        hideButtonText='Hide message'
+        hideButtonAriaText='Hide message. I do not want to take part in research'
       />
     )
 
@@ -30,8 +30,8 @@ describe('ResearchBanner component', () => {
       <ResearchBanner
         {...requiredProps}
         hideButton={false}
-        hideButtonText="Hide message"
-        hideButtonAriaText="Hide message. I do not want to take part in research"
+        hideButtonText='Hide message'
+        hideButtonAriaText='Hide message. I do not want to take part in research'
       />
     )
 
@@ -42,7 +42,7 @@ describe('ResearchBanner component', () => {
     render(
       <ResearchBanner
         {...requiredProps}
-        hideButton={true}
+        hideButton
       />
     )
 
@@ -56,8 +56,8 @@ describe('ResearchBanner component', () => {
       <ResearchBanner
         {...requiredProps}
         hideButton={false}
-        hideButtonText="Hide message"
-        hideButtonAriaText="Hide message. I do not want to take part in research"
+        hideButtonText='Hide message'
+        hideButtonAriaText='Hide message. I do not want to take part in research'
         handleHideButtonClick={handleHideButtonClick}
       />
     )
@@ -72,8 +72,8 @@ describe('ResearchBanner component', () => {
       <ResearchBanner
         {...requiredProps}
         hideButton={false}
-        hideButtonText="Hide message"
-        hideButtonAriaText="Hide message. I do not want to take part in research"
+        hideButtonText='Hide message'
+        hideButtonAriaText='Hide message. I do not want to take part in research'
       />
     )
 
@@ -84,7 +84,7 @@ describe('ResearchBanner component', () => {
     render(
       <ResearchBanner
         {...requiredProps}
-        hideButton={true}
+        hideButton
       />
     )
 
@@ -97,8 +97,8 @@ describe('ResearchBanner component', () => {
       <ResearchBanner
         {...requiredProps}
         hideButton={false}
-        hideButtonText="Hide message"
-        hideButtonAriaText="Hide message. I do not want to take part in research"
+        hideButtonText='Hide message'
+        hideButtonAriaText='Hide message. I do not want to take part in research'
       />
     )
 

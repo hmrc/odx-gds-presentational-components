@@ -1,6 +1,6 @@
 {
   "name": "hmrc-gds-react-components",
-  "version": "2.2.8",
+  "version": "0.0.11",
   "private": false,
   "description": "Collection of React Components that fulfil the GDS Specification for use in applications",
   "main": "./dist/cjs/index.js",
@@ -17,7 +17,8 @@
   "scripts": {
     "clean": "rm -Rf dist",
     "clean:ps": "@powershell if (Test-Path ./dist) {Remove-Item ./dist -Recurse -Force}",
-    "test": "npm run lint  & jest --coverage",
+    "test": "npm run lint:fix  & jest --coverage",
+    "test:update": "jest --coverage -u",
     "storybook": "storybook dev -p 6006",
     "storybook:debug:webpack": "storybook dev -p 6006 --debug-webpack",
     "build-storybook": "storybook build",
@@ -61,6 +62,7 @@
     "css-loader": "^6.8.1",
     "enzyme": "^3.11.0",
     "govuk-frontend": "^5.8.0",
+    "hmrc-frontend": "^6.1.0",
     "jest": "^29.7.0",
     "jest-axe": "^8.0.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -86,10 +88,10 @@
     "ts-node": "^10.9.2",
     "ts-standard": "^12.0.2",
     "webpack-cli": "^5.1.4",
-    "webpack-react-component-name": "^5.0.5",
-    "hmrc-frontend": "^6.1.0"
+    "webpack-react-component-name": "^5.0.5"
   },
   "dependencies": {
+    "@x-govuk/govuk-prototype-components": "^5.0.2",
     "focus-trap-react": "^10.2.3"
   },
   "peerDependencies": {

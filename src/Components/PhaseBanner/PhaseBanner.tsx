@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC } from 'react'
 import { PhaseBannerProps } from './PhaseBanner.types'
 
 export const PhaseBanner: FC<PhaseBannerProps> = ({ children, type }) => {
@@ -13,5 +13,5 @@ export const PhaseBanner: FC<PhaseBannerProps> = ({ children, type }) => {
         </span>
       </p>
     </div>
-  );
-};
+  )
+}
