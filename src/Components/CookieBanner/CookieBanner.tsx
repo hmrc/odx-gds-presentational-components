@@ -3,6 +3,7 @@ import CookieBannerProps from './CookieBanner.types'
 
 const CookieBanner: FC<CookieBannerProps> = (props: CookieBannerProps) => {
   const {
+    headingText = 'Cookies on',
     serviceName,
     standardDescription,
     acceptedDescription,
@@ -12,11 +13,12 @@ const CookieBanner: FC<CookieBannerProps> = (props: CookieBannerProps) => {
     acceptButtonText,
     rejectButtonText,
     hideCookieButtonText = 'Hide cookie message',
-    cookieLink
+    cookieLink,
+    cookieLinkText = 'View cookies'
   } = props
 
   const [userAction, setUserAction] = useState('no action')
-  const headingValue = 'Cookies on ' + serviceName
+  const headingValue = `${headingText} ${serviceName}`
 
   return userAction === 'hidden'
     ? null
@@ -50,7 +52,7 @@ const CookieBanner: FC<CookieBannerProps> = (props: CookieBannerProps) => {
                     }}
                   >{rejectButtonText}
                   </button>
-                  <a className='govuk-link' href={cookieLink}>View cookies</a>
+                  <a className='govuk-link' href={cookieLink}>{cookieLinkText}</a>
                 </>)
               : (
                 <button

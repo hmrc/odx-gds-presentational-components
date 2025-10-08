@@ -1,0 +1,82 @@
+# Testing your code
+
+Before submitting a contribution to HMRC GDS React Components, please make sure that you have checked the following:
+    - Verify that your changes comply with [GDS Standards](https://design-system.service.gov.uk/)
+    - Run the linting command to fix any formatting issues
+    - Confirm that the behaviour and/or appearance of changes is as expected
+    - Add new test cases where necessary
+    - Update existing test cases if applicable
+    - Run the full test suite to ensure no regressions
+
+
+## Running tests
+
+Tests will automatically be checked upon opening a PR and any failing tests will be flagged. Check locally first by running `npm run test`. Any failing tests must be resolved before approval is granted.
+
+
+## Writing tests
+
+We use [Jest](https://jestjs.io/docs/getting-started) in this library. The `npm run test` script with generate a Jest coverage output and includes a breakdown of test coverage for statements, branches, functions and lines. You must ensure that at minimum, 3 of these 4 metrics provide at least 90% coverage. The remaining metric must provide at least 75% coverage.
+
+You should write new tests when:
+    - You have created a new component or functionality
+    - You have added to an existing component or functionality.
+
+You should update tests when:
+    - You have changed an existing component or functionality
+
+We ask that you use [Gherkin](https://www.guru99.com/gherkin-test-cucumber.html) syntax to organise and define test cases.
+
+```console
+GIVEN an existing precondition
+WHEN an event or trigger occurs
+THEN this is the expected behaviour
+```
+
+When raising a PR, please include a screenshot of test coverage.
+
+### Skeleton test structure
+
+```tsx
+    import React from 'react'
+    import renderer from 'react-test-renderer'
+    import { cleanup, render } from '@testing-library/react'
+    import { snapshotAndAxeTest } from 'testHelpers'
+    import { X } from '..'
+    import '@testing-library/jest-dom'
+
+    /****************
+    * SET UP
+    ****************/
+    // Note: running cleanup afterEach is done automatically for you in @testing-library/react@9.0.0 or higher
+    // unmount and cleanup DOM after the test is finished.
+    afterEach(cleanup)
+
+    /****************
+    * SNAPHOTS
+    ****************/
+
+    snapshotAndAxeTest('A Snapshot', <X>)
+
+    /****************
+    * ASSERTIONS
+    ****************/
+
+    describe('Given...', () => {
+        it('When...', () => {
+            // Then...
+            const {getByRole} = render(
+                <X>
+            )
+
+            expect(x).toBe(y)
+        })
+    })
+```
+
+
+## Snapshots
+
+We include [Snapshot](https://jestjs.io/docs/snapshot-testing) tests in this library as a way of preventing unwanted changes in component markup. When these are ran, it will compare current markup against previous markup.
+
+In the event that there is a mismatch between current and previous markup, the snapshot test will fail. Console output will point towards any changes. If this is an intended change and if it is in line with GDS standards, then you can update the snapshot by running the test with the `-u` flag.

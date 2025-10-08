@@ -62,5 +62,5 @@ describe('Feature: Start Button', () =>
         expect(mockOnClick).toHaveBeenCalled()
       })
     })
-})
+  })
 )

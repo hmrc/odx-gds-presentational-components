@@ -14,6 +14,7 @@ afterEach(cleanup)
 const mockAccept = jest.fn(() => { })
 const mockReject = jest.fn(() => { })
 const cookieProps = {
+  headingText: 'Cookies on',
   serviceName: 'cookie test',
   standardDescription: <p data-testid='standard description' className='govuk-body'>generic cookies description</p>,
   acceptedDescription: <p data-testid='accepted description' className='govuk-body'>you have accepted cookies</p>,
@@ -22,7 +23,8 @@ const cookieProps = {
   rejectedHandler: mockReject,
   acceptButtonText: 'Accept cookies',
   rejectButtonText: 'Reject cookies',
-  cookieLink: 'test link'
+  cookieLink: 'test link',
+  cookieLinkText: 'View cookies'
 }
 
 /****************
@@ -46,7 +48,7 @@ describe('Feature: Cookie Banner', () => {
       const header = cookieBanner.container.getElementsByTagName('h2')[0]
       expect(header).toBeTruthy()
       const headerText = header.innerHTML
-      expect(headerText).toBe('Cookies on ' + cookieProps.serviceName)
+      expect(headerText).toBe(`${cookieProps.headingText} ${cookieProps.serviceName}`)
     })
 
     // description
@@ -62,6 +64,14 @@ describe('Feature: Cookie Banner', () => {
       const anchors = cookieBanner.container.getElementsByTagName('a')
       const anchor = [...anchors].find(a => a.getAttribute('href') === cookieProps.cookieLink)
       expect(anchor).toBeTruthy()
+    })
+
+    // view cookies link text
+    it('Should render an <a> with text that matches the cookieLinkText prop', () => {
+      const cookieBanner = render(<CookieBanner {...cookieProps} />)
+      const anchors = cookieBanner.container.getElementsByTagName('a')[0]
+      const anchorText = anchors.innerHTML
+      expect(anchorText).toBe(cookieProps.cookieLinkText)
     })
 
     // accept button text

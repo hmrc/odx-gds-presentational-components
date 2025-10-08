@@ -1,2 +1,2 @@
-import { PhaseBanner } from './PhaseBanner';    
-export { PhaseBanner };
+import { PhaseBanner } from './PhaseBanner'
+export { PhaseBanner }

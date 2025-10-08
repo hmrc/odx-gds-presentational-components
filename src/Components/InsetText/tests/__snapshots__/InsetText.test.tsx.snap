@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alpha InsetText Snapshot 1`] = `
+<div
+  className="govuk-inset-text"
+>
+  Test content
+   
+  <a
+    className="govuk-link"
+    href="#"
+  >
+    test feedback content
+  </a>
+  .
+</div>
+`;
+
+exports[`Beta InsetText Snapshot 1`] = `
+<div
+  className="govuk-inset-text"
+>
+  It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+</div>
+`;

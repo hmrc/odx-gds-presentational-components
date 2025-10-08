@@ -1,0 +1,22 @@
+import {Canvas, Meta} from '@storybook/blocks';
+import  * as SignoutStories from './Signout.stories';
+import { Signout } from '../Signout'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={SignoutStories} />
+
+# Signout
+This Signout component is used to render Heading and signin button and 
+Extra content using extraContent Prop
+
+# Props
+<ArgsTable of={Signout} />
+
+Signout with heading and sign in button
+<Canvas of={SignoutStories.Default}/>
+
+Signout with heading and sign in button nad we have saved your answers text
+<Canvas of={SignoutStories.WeHaveSaveYourAnswer}/>
+
+Signout with heading and sign in button nad we have saved your answers text and Before you go component
+<Canvas of={SignoutStories.BeforeYouGo}/>

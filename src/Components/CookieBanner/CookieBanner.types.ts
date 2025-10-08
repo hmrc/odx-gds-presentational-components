@@ -1,6 +1,9 @@
 import { MouseEventHandler, ReactElement } from 'react'
 
 export default interface CookieBannerProps {
+  /** [optional] Defines the text shown in the heading, a prefix to service name, default to 'Cookies on' */
+  headingText?: string
+
   /** Defines the text shown in the header */
   serviceName: string
 
@@ -30,4 +33,7 @@ export default interface CookieBannerProps {
 
   /** href to pass to the view cookies link */
   cookieLink: string
+
+  /** [optional] Text to show on the view cookies link, default to 'View cookies' */
+  cookieLinkText?: string
 }

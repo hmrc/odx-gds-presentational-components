@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Secondary Navigation Component Default Snapshot 1`] = `
+<nav
+  aria-label="Secondary menu"
+  className="x-govuk-secondary-navigation"
+>
+  <ul
+    className="x-govuk-secondary-navigation__list"
+  >
+    <li
+      className="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current"
+      data-testid="overview-0"
+    >
+      <a
+        aria-current="page"
+        className="x-govuk-secondary-navigation__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Overview
+      </a>
+    </li>
+    <li
+      className="x-govuk-secondary-navigation__list-item"
+      data-testid="staff list-1"
+    >
+      <a
+        className="x-govuk-secondary-navigation__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Staff list
+      </a>
+    </li>
+    <li
+      className="x-govuk-secondary-navigation__list-item"
+      data-testid="projects-2"
+    >
+      <a
+        className="x-govuk-secondary-navigation__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Projects
+      </a>
+    </li>
+    <li
+      className="x-govuk-secondary-navigation__list-item"
+      data-testid="settings-3"
+    >
+      <a
+        className="x-govuk-secondary-navigation__link"
+        href="#"
+        onClick={[Function]}
+      >
+        Settings
+      </a>
+    </li>
+  </ul>
+</nav>
+`;
+
+exports[`Secondary Navigation Component With Custom Props Snapshot 1`] = `
+<nav
+  aria-labelledby="main-nav"
+  className="x-govuk-secondary-navigation govuk-!-margin-bottom-5"
+  data-tracking-target="Page not working properly"
+  data-tracking-type="Outbound"
+>
+  <ul
+    className="x-govuk-secondary-navigation__list"
+  >
+    <li
+      className="x-govuk-secondary-navigation__list-item"
+      data-testid="overview-0"
+    >
+      <a
+        className="x-govuk-secondary-navigation__link govuk-link govuk-heading-s"
+        href="#"
+        onClick={[Function]}
+      >
+        Overview
+      </a>
+    </li>
+    <li
+      className="x-govuk-secondary-navigation__list-item x-govuk-secondary-navigation__list-item--current"
+      data-testid="staff list-1"
+    >
+      <a
+        aria-current="page"
+        className="x-govuk-secondary-navigation__link govuk-link govuk-heading-s"
+        href="#"
+        onClick={[Function]}
+      >
+        Staff list
+      </a>
+    </li>
+    <li
+      className="x-govuk-secondary-navigation__list-item"
+      data-testid="projects-2"
+    >
+      <a
+        className="x-govuk-secondary-navigation__link govuk-link govuk-heading-s"
+        href="#"
+        onClick={[Function]}
+      >
+        Projects
+      </a>
+    </li>
+    <li
+      className="x-govuk-secondary-navigation__list-item"
+      data-testid="settings-3"
+    >
+      <a
+        className="x-govuk-secondary-navigation__link govuk-link govuk-heading-s"
+        href="#"
+        onClick={[Function]}
+      >
+        Settings
+      </a>
+    </li>
+  </ul>
+</nav>
+`;

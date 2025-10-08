@@ -1,0 +1,20 @@
+import {Canvas, Meta} from '@storybook/blocks'
+import  * as SummaryPageStories from './SummaryPage.stories'
+import { SummaryPage } from '../SummaryPage'
+import { ArgsTable } from '@storybook/addon-docs';
+
+<Meta of={SummaryPageStories} />
+
+# SummaryPage
+
+## Props:
+<ArgsTable of={SummaryPage} />
+
+### Details 
+This SummaryPage component is used to render title or banner title 
+and page description using children Prop
+
+Consuming component gets data from backend(Pega) should sanitize And Parse Page description (children prop)
+
+
+<Canvas of={SummaryPageStories.Default}/>

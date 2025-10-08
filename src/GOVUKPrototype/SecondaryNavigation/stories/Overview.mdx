@@ -1,0 +1,145 @@
+import { Canvas, Meta, ArgsTable } from '@storybook/blocks';
+import  * as SecondaryNavigationStories from './SecondaryNavigation.stories';
+import { SecondaryNavigation } from '../SecondaryNavigation';
+import { SecondaryNavigationItemsDocs } from './SecondaryNavigation.types.docs'
+
+<Meta of={SecondaryNavigationStories} />
+
+# GOV.UK Secondary Navigation Component
+[GOVUK ProtoType Components Documentation](https://x-govuk.github.io/govuk-prototype-components/secondary-navigation/)
+
+The **Secondary Navigation** component allows users to navigate between pages scoped to a specific section of a service. It is ideal for use within a case or record view, where multiple pages relate to a single entity.
+
+## Purpose
+
+Use this component when:
+
+- Your service already includes [service navigation](https://design-system.service.gov.uk/components/service-navigation/).
+- You need to provide navigation between related pages within a specific context or entity—such as different views within a case, record, or user profile.
+
+Avoid using this component for:
+- Primary navigation
+- Situations better suited to [sub-navigation](https://x-govuk.github.io/govuk-prototype-components/sub-navigation) or [tabs](https://design-system.service.gov.uk/components/tabs/)
+
+## Appearance and Behavior
+
+A secondary navigation component provides access to sub-sections of a site or application, complementing the primary navigation. It is typically used to organize related content under a main category.
+
+### Layout and Structure
+
+- **Orientation**: Vertical list of links (e.g., sidebar) or horizontal (e.g., tab bar), typically placed before the `<main>` element.
+- **Items Source**: Navigation items are passed as props or defined in a component array
+- **Default Selection**: One item must be explicitly marked as current using `current: true`.
+
+### Visual Styling
+
+- **Typography**: Matches GOV.UK Design System standards; current item uses bold black text.
+- **Color Scheme**: Inactive items use standard link styling; active item has a black underline.
+- **Spacing**: Consistent padding and spacing between list items for clarity.
+- **Icons**: Not included by default; component focuses on text-based navigation but can be extended with icon support.
+
+### Behavior
+
+- **Initial State**: The item marked as current is visually highlighted and represents the active page.
+- **Interaction**: Each item is a full-page link; clicking navigates to a new route.
+- **Hover/Focus Effects**: Standard GOV.UK link hover and focus styles apply.
+
+### Accessibility
+
+- **ARIA Labeling**:  
+  - If `visuallyHiddenTitle` is provided, the component sets `aria-label` using that string. 
+  - If `labelledBy` is provided, the component sets `aria-labelledby` to reference an existing visible heading by ID.
+  - If neither is provided, the component defaults to `aria-label="Secondary menu"`.
+- **Keyboard Navigation**: Fully accessible via keyboard. Users can use the tab key to navigate the focus to each link. To activate the link while in focus, users can hit either space or enter
+- **Screen Reader Support**: The currently active item is announced using `aria-current="page"`, helping screen reader users understand which page they are on.
+
+## Props
+
+### SecondaryNavigation
+
+<ArgsTable of={SecondaryNavigation} />
+
+### SecondaryNavigationItems
+
+<ArgsTable of={SecondaryNavigationItemsDocs} />
+
+## Details
+
+The component with default props. This includes the standard layout, default `aria-label`, and no custom styling or accessibility overrides.
+<Canvas of={SecondaryNavigationStories.Default}/>
+ 🚨 <strong>Important: Set <code>current: true</code> on the active navigation item before using this component.</strong>
+
+The component supports custom props for styling, accessibility, and interactivity
+- `classes`: Applies custom styling to the container.
+- `labelledBy` and `visuallyHiddenTitle`: Set accessibility attributes (`aria-labelledby` or `aria-label`) for screen reader support.
+- `attributes`: Passes event handlers and other HTML attributes to enhance interactivity.
+<Canvas of={SecondaryNavigationStories.WithCustomProps}/>
+ 🚨 <strong>Important: Set <code>current: true</code> on the active navigation item before using this component.</strong>
+
+# Installing
+
+This guide explains how to authenticate with HMRC’s private Artifactory registry, install the published component, and use it with custom props for styling, accessibility, and interactivity.
+
+## Authenticate with Artifactory
+
+To access HMRC’s internal registry, configure your `.npmrc` file with the following settings:
+
+```ini
+# HMRC's strategic registry
+registry=https://artifactory.alm.corp.hmrc.gov.uk/artifactory/api/npm/dx-api-react-npm-virtual
+strict-ssl=false
+
+# Suppress peer dependency warnings
+legacy-peer-deps=true
+
+# Suppress verbose npm logs
+loglevel=silent
+```
+
+## Install the Component
+
+Run the following command to install the published package from Artifactory:
+
+```bash
+npm install hmrc-gds-react-components
+```
+
+## GOV.UK Prototype Integration
+
+To use components within a GOV.UK prototype, follow these step
+
+### Install the Prototype Components
+
+Install the latest version of the GOV.UK prototype components (preferably v5 or above `@x-govuk/govuk-prototype-components": "^5.0.2`):
+
+```bash
+npm install @x-govuk/govuk-prototype-components@latest
+```
+
+### Import the CSS
+
+In your main stylesheet, add:
+
+```CSS
+@import "node_modules/@x-govuk/govuk-prototype-components/src/x-govuk";
+```
+
+# Usage
+
+To use the `SecondaryNavigation` component from HMRC’s GDS React library, start by importing the component:
+
+```tsx
+import { SecondaryNavigation as GDSSecondaryNavigation } from 'hmrc-gds-react-components';
+```
+
+Render the component with the appropriate configuration:
+
+```tsx
+  <GDSSecondaryNavigation
+  items={[/* navigation items */]}
+  labelledBy="main-nav"
+  visuallyHiddenTitle="Secondary Navigation menu"
+  classes="govuk-!-margin-bottom-5"
+  attributes={/* attributes */}
+/>
+```

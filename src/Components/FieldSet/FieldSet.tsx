@@ -45,14 +45,14 @@ export const FieldSet: FC<FieldSetProps> = (props: FieldSetProps) => {
           />
           {legendContent}
         </legend>
-            {hintText !== undefined && ( 
-              <>
-                {React.isValidElement(hintText) && hintText}
-                {typeof hintText === 'string' && (
-                  <div id={hintID} className='govuk-hint'>{hintText}</div>
-                )}
-              </>
+        {hintText !== undefined && (
+          <>
+            {React.isValidElement(hintText) && hintText}
+            {typeof hintText === 'string' && (
+              <div id={hintID} className='govuk-hint'>{hintText}</div>
             )}
+          </>
+        )}
         {ErrorMessage !== undefined && <p id={errorID} className='govuk-error-message'><span className='govuk-visually-hidden'>Error:</span>{ErrorMessage}</p>}
         {children}
       </fieldset>

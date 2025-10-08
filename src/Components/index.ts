@@ -19,6 +19,11 @@ import { CookieBanner } from './CookieBanner'
 import { Select } from './Select'
 import { GOVUKFooter } from './GOVUKFooter'
 import { ResearchBanner } from './ResearchBanner'
+import { BackLink } from './BackLink'
+import { NotificationBadge } from './NotificationBadge'
+import { SummaryPage } from './SummaryPage'
+import { Link } from './Link'
+import { SignoutComponent } from './Signout'
 
 export {
   TextInput,
@@ -44,5 +49,10 @@ export {
   CookieBanner,
   Select,
   GOVUKFooter,
-  ResearchBanner
+  ResearchBanner,
+  BackLink,
+  NotificationBadge,
+  SummaryPage,
+  Link,
+  SignoutComponent
 }
